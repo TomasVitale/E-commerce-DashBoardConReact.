@@ -15,3 +15,5 @@ Ingresos medios $ 70000;
 Interes por los viajes y series.
 
 Tematica del sitio: E-commerse de decoracion de interiores.
+
+https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce/blob/main/wireframes/Deco%20Home.png
