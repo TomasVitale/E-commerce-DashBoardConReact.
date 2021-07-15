@@ -13,3 +13,5 @@ Entre 25 a 45 años;
 Estudios terciarios y/o universitarios;
 Ingresos medios $ 70000;
 Interes por los viajes y series.
+
+Tematica del sitio: E-commerse de decoracion de interiores.
