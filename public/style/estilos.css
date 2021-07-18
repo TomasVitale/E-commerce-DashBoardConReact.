@@ -1,0 +1,8 @@
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    margin:auto;
+    margin-left:auto;
+    box-sizing: border-box;
+}
