@@ -1,0 +1,22 @@
+{
+  "name": "grupo_8_mi-primer-e-commerce",
+  "version": "1.0.0",
+  "description": "Incorporando Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce.git"
+  },
+  "author": "Tomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce/issues"
+  },
+  "homepage": "https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
