@@ -17,3 +17,5 @@ Interes por los viajes y series.
 Tematica del sitio: E-commerse de decoracion de interiores.
 
 ![image](https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce/blob/main/wireframes/Deco%20Home.png)
+
+Enlace tablero: https://trello.com/b/GmHmrbNV/grupo-8

@@ -1,7 +1,6 @@
 .nav-bar {
     display: flex;
     list-style-type: none;
-    text-align: center;
     margin:auto;
     margin-left:auto;
     box-sizing: border-box;
@@ -23,8 +22,29 @@
     font-size: 16px;
 }
 .form{
-    margin:15px
+    margin:15px;
+    font-size: 16px;
+    padding-right: 610px;
     
+    
+}
+.form1{
+    margin:15px;
+    font-size: 16px;
+    padding-right: 555px;
+      
+}
+
+.form2{
+    margin:15px;
+    font-size: 16px;
+       
+}
+.form3{
+    margin:15px;
+    font-size: 16px;
+    padding-right: 485px;
+      
 }
 .barra{
     margin-bottom: 25px;
@@ -33,7 +53,9 @@
 .email{
     margin-bottom: 15px;
     display: block;
+    font-size: 12px;
    
+     
 }
 .olvidaste-contraseña{
     margin-bottom: 15px;
@@ -41,8 +63,8 @@
 .crear-cuenta{
     border:none;
     margin-bottom: 15px;
-    background-color: blue;
-    color: white;
+    background-color: #f1c40f;
+    color: black;
     padding: 10px 100px 10px 100px;
     border-radius: 10px;
 }
@@ -54,12 +76,45 @@
 
 .formulario{
     padding: 20px 15px;
+    width: 90%;
+    
     
 }
 .form-control{
     margin-bottom: 15px;
     border: 1px solid rgba(4, 4, 4, 0.3);
-    color: rgb(211, 210, 210);
-    padding: 5px 250px 5px 250px;
-    
+    color: black;
+    margin:0px;
+    padding: 5px 500px 5px 5px;
+        
+}
+.input {
+    text-align: left;
+}
+body{
+    width: 100%;
+}
+.crearcuenta{
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: 35px;
+    font-family: "roboto";
+    font-size: 16px;
+}
+.telefono{
+    margin-bottom: 15px;
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    color: black;
+    margin:0px;
+    padding: 5px 500px 5px 5px;
+        
+}
+.nombre{
+    margin-bottom: 15px;
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    color: black;
+    margin:0px;
+    padding: 5px 500px 5px 5px;
+        
 }
