@@ -6,3 +6,60 @@
     margin-left:auto;
     box-sizing: border-box;
 }
+
+.nav-bar-right{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    
+}
+
+.login{
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: 35px;
+    font-family: "roboto";
+    font-size: 16px;
+}
+.form{
+    margin:15px
+    
+}
+.barra{
+    margin-bottom: 25px;
+    
+}
+.email{
+    margin-bottom: 15px;
+    display: block;
+   
+}
+.olvidaste-contraseña{
+    margin-bottom: 15px;
+}
+.crear-cuenta{
+    border:none;
+    margin-bottom: 15px;
+    background-color: blue;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+}
+.no-tenes-cuenta{
+    
+    text-align: right;
+}
+
+
+.formulario{
+    padding: 20px 15px;
+    
+}
+.form-control{
+    margin-bottom: 15px;
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    color: rgb(211, 210, 210);
+    padding: 5px 250px 5px 250px;
+    
+}
