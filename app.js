@@ -13,6 +13,10 @@ app.get('/home', (request,response)=>{
         response.sendFile(path.join(__dirname,'views/home.html'))
     })
 
+app.get('/detalleproducto', function(req,res){
+        res.sendFile(path.resolve(__dirname, 'views/detalleproducto.html'))
+        });
+    
 app.get('/register', function(req,res){
         res.sendFile(path.resolve(__dirname, 'views/register.html'))
         });
