@@ -6,11 +6,21 @@
     box-sizing: border-box;
 }
 
-.nav-bar-right{
-    display:flex;
-    justify-content: space-between;
-    margin-left: 30px;
+.nav-bar-right {
     
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    color:black;
+    background-color: rgb(202, 206, 209);
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.nav-bar-right li{
+    margin-right: 5px
 }
 
 .login{
@@ -24,14 +34,12 @@
 .form{
     margin:15px;
     font-size: 16px;
-    padding-right: 610px;
-    
-    
+    padding-right: 467px;
 }
 .form1{
     margin:15px;
     font-size: 16px;
-    padding-right: 555px;
+    padding-right: 410px;
       
 }
 
@@ -43,7 +51,7 @@
 .form3{
     margin:15px;
     font-size: 16px;
-    padding-right: 485px;
+    padding-right: 335px;
       
 }
 .barra{
@@ -54,6 +62,7 @@
     margin-bottom: 15px;
     display: block;
     font-size: 12px;
+    
    
      
 }
@@ -62,6 +71,7 @@
 }
 .crear-cuenta{
     border:none;
+    margin-top: 15px;
     margin-bottom: 15px;
     background-color: #f1c40f;
     color: black;
@@ -85,7 +95,7 @@
     border: 1px solid rgba(4, 4, 4, 0.3);
     color: black;
     margin:0px;
-    padding: 5px 500px 5px 5px;
+    padding: 5px 350px 5px 5px;
         
 }
 .input {
