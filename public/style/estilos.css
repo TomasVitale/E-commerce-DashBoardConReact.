@@ -37,7 +37,7 @@
     padding-right: 467px;
 }
 .form1{
-    margin:15px;
+    margin: 15px;
     font-size: 16px;
     padding-right: 410px;
       
@@ -46,6 +46,7 @@
 .form2{
     margin:15px;
     font-size: 16px;
+    margin-bottom: 20px;
        
 }
 .form3{
@@ -54,24 +55,42 @@
     padding-right: 335px;
       
 }
+.form4{
+    margin:15px;
+    font-size: 16px;
+    padding-right: 445px;
+      
+}
+.form5{
+    margin:15px;
+    font-size: 16px;
+    padding-right: 435px;
+      
+}
+.form6{
+    margin:15px;
+    font-size: 16px;
+    padding-right: 320px;
+      
+}
 .barra{
     margin-bottom: 25px;
     
 }
 .email{
+    margin-top: 15px;
     margin-bottom: 15px;
     display: block;
     font-size: 12px;
-    
-   
-     
+        
 }
+
 .olvidaste-contraseña{
     margin-bottom: 15px;
 }
 .crear-cuenta{
     border:none;
-    margin-top: 15px;
+    margin-top: 35px;
     margin-bottom: 15px;
     background-color: #f1c40f;
     color: black;
@@ -127,4 +146,12 @@ body{
     margin:0px;
     padding: 5px 500px 5px 5px;
         
+}
+.recordar{
+    padding: 5px 370px 5px 0px;
+    margin-bottom: 20px;
+}
+
+.contraseña{
+    margin-top: 15px;
 }
