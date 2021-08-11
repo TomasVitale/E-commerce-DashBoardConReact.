@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }

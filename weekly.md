@@ -1,0 +1,1 @@
+Resumen: el equipo se reunio entre 2-3 veces por semana para ver los avances del proyecto. En la primer reunion Romina explico lo que hizo. Se necesitaba que realice su parte para poder seguir con los demas puntos del sprint. No se le presento inconvenientes por lo que avanzamos perfectamente. 
