@@ -8,6 +8,7 @@ router.get('/home',mainController);
 router.get('/detalleproducto',mainController);
 router.get('/register',mainController);
 router.get('/login',mainController);
+router.get('/productCreate',mainController);
 
 
 
