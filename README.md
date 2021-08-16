@@ -16,6 +16,8 @@ Interes por los viajes y series.
 
 Tematica del sitio: E-commerse de decoracion de interiores.
 
+Proyecto: Elegimos este proyecto porque Tomas lo planteo, haciendo referencia que unos primos tenian una pagina similar y le gusto la tematica. Todos estuvimos de acuerdo y empezamos a buscar paginas similares. Es un proyecto interesante, tienen muchas cosas para incluir y sale de lo habitual. Vamos a salir expertos en decoracion!
+
 Enlace tablero: https://trello.com/b/GmHmrbNV/grupo-8
 
 ![image](https://github.com/RominaBaciocchi/Grupo_8_Mi-primer-E-Commerce/blob/main/wireframes/Deco%20Home.png)
