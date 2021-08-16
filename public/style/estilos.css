@@ -14,7 +14,7 @@
     list-style-type: none;
     justify-content: space-around;
     color:black;
-    background-color: rgb(202, 206, 209);
+    background-color:#BFAFA6;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif
     
@@ -96,6 +96,7 @@
     color: black;
     padding: 10px 100px 10px 100px;
     border-radius: 10px;
+    
 }
 .no-tenes-cuenta{
     
