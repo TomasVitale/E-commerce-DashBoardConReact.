@@ -33,6 +33,4 @@ app.get('/productCreate',function(req,res){
 
 
 
-
-
 app.use (express.static('public')) 
