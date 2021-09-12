@@ -1,12 +1,22 @@
 [
-    {
-      "id":1,
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "password": "",
-      "category":"",
-      "image":""
-
-    }
+ {
+  "id": 1,
+  "nombre": "romina Baciocchi",
+  "email": "rorra_fk@hotmail.com",
+  "telefono": "3344444",
+  "password": [
+   "12345",
+   "12345"
+  ]
+ },
+ {
+  "id": 2,
+  "nombre": "luciana gomez",
+  "email": "luciana@hotmail.com",
+  "telefono": "33333",
+  "password": [
+   "2345",
+   "2345"
+  ]
+ }
 ]
