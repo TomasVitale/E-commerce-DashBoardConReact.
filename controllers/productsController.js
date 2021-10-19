@@ -21,7 +21,7 @@ const productController = {
 
   create: function (req, res){
         
-    res.render("/productCreate", { products } )
+    res.render("/products/create", { products } )
 
   },
 

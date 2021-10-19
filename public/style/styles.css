@@ -38,7 +38,7 @@ body {
     display: flex;
     border: solid goldenrod 5px;
     justify-content: space-around;
-    align: center;
+    align-content: center;
 }
 
 .contenedorMediosDePago1 {
@@ -192,7 +192,7 @@ body {
     display: flex;
     border: solid goldenrod 5px;
     justify-content: space-around;
-    align: center;
+    align-content: center;
 }
 
 .contenedorMediosDePago1 {
