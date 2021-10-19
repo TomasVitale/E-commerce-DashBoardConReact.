@@ -38,7 +38,7 @@ const productController = {
 store: function (req, res){
   let productos = allProducts ();
 
-    let nuevoproducto = {
+    let nuevoProducto = {
       id: productos.length + 1 ,
       name: req.body.name ,
       price: req.body.price,
