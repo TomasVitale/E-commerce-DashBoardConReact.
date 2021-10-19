@@ -2,21 +2,29 @@
  {
   "id": 1,
   "nombre": "romina Baciocchi",
-  "email": "rorra_fk@hotmail.com",
+  "email": "rominabaciocchi@gmail.com",
   "telefono": "3344444",
-  "password": [
-   "12345",
-   "12345"
-  ]
+  "password": "$2a$10$05bY9HGwj9ufcOmhtZpbZ.zhTKlfZA/nWBl.sJTItCczrzhRrphci"
  },
  {
   "id": 2,
   "nombre": "luciana gomez",
   "email": "luciana@hotmail.com",
-  "telefono": "33333",
-  "password": [
-   "2345",
-   "2345"
-  ]
+  "telefono": "1111111",
+  "password": "$2a$10$tBcesxPpPqnwCj86MfyZTO0XRQI3xFWB/HLxFOrbOS0/xWp8GFVu."
+ },
+ {
+  "id": 3,
+  "nombre": "carla Lopez",
+  "email": "carlalopez@gmail.com",
+  "telefono": "33544444",
+  "password": "$2a$10$Z2S7WYhNuke0Gjj0/kTt9eK0h.zNrBV6wVHG9Obt46Vf90t8Zmhs."
+ },
+ {
+  "id": 4,
+  "nombre": "tomas vitale",
+  "email": "tomi@gmail.com",
+  "telefono": "2535",
+  "password": "$2a$10$j/GHHucBBO.K5p5C.avosuSunPvNJ4zF0mqN5IJIDTLB5tmB4cpvK"
  }
 ]

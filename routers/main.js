@@ -32,6 +32,7 @@ router.get('/detalleproducto',mainController.detalleproducto);
 router.get('/register',mainController.register);
 router.post('/register', validations, mainController.processRegister);
 router.get('/login',mainController.login);
+router.post('/login',mainController.processLogin);
 
 
 

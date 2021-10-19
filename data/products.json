@@ -1,12 +1,13 @@
 [
-    {
-     "id": 1,
-     "name": "",
-     "price": 100,
-     "category": "",
-     "description": " ",
-     "color": "",
-     "image": "",
-     "measure": ""   }
-    
+ {
+  "id": 0,
+  "name": "",
+  "price": 100,
+  "category": "",
+  "description": " ",
+  "color": "",
+  "image": "",
+  "measure": ""
+ }
+
 ]

@@ -10,9 +10,13 @@ app.listen(3000,() => {
     console.log("La app esta funcionando en la url http://localhost:3000")});
 
 
-    const mainRoutes = require ('./routers/main');
+const mainRoutes = require ('./routers/main');
+const productRouter  = require ('./routers/main');
 
-    app.use('/', mainRoutes);
+app.use('/', mainRoutes);
+app.use('/list', productRouter);
+
+
 
 app.get('/', function(req,res){
         res.render('home')
