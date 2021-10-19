@@ -2,11 +2,17 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.listen(3000,() => {
     console.log("La app esta funcionando en la url http://localhost:3000")});
+
+
+    const mainRoutes = require ('./routers/main');
+
+    app.use('/', mainRoutes);
 
 app.get('/', function(req,res){
         res.render('home')
