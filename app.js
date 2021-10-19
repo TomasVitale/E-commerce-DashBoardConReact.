@@ -12,7 +12,7 @@ app.listen(3000,() => {
 
     const mainRoutes = require ('./routers/main');
 
-    app.use('/', mainRoutes);
+app.use('/', mainRoutes);
 
 app.get('/', function(req,res){
         res.render('home')
