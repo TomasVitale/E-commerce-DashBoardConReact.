@@ -11,8 +11,10 @@ app.listen(3000,() => {
 
 
 const mainRoutes = require ('./routers/main');
+const productsRouter = require('./routers/products');
 
 app.use('/', mainRoutes);
+app.use('/products', productsRouter);
 
 
 app.get('/', function(req,res){

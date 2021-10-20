@@ -11,9 +11,18 @@ function allProducts(){
   return productos
 }
 
+function writeJson(array){
+  
+  let arrayJson = JSON.stringify(array);
+  
+  
+  return fs.writeFileSync(path.join(__dirname, "../data/products.json"), arrayJson);
+
+}
+
 const productController = {
 
-    products: function (req, res){
+    list: function (req, res){
       
     let products = allProducts ();
     res.render("products", { products } )
@@ -21,22 +30,24 @@ const productController = {
 
   create: function (req, res){
         
-    res.render("/products/create", { products } )
+    res.render("/productCreate")
 
   },
 
  
 
   detail: function (req, res){
-    let idProducto= products.find(function(producto){
+    let products = allProducts ();
+    let productoEncontrado= products.find(function(producto){
       return products.id == req.params.id;
+    })
 
-    res.render ("detalleProducto", {producto = idProducto})
-  })
+    res.render ("detalleproducto", {product : productoEncontrado})
+  
 },
 
 store: function (req, res){
-  let productos = allProducts ();
+  let products = allProducts ();
 
     let nuevoProducto = {
       id: productos.length + 1 ,
@@ -49,14 +60,15 @@ store: function (req, res){
       image : req.body.image
     }
     
-    let productosActualizados = [...productos, nuevoProducto]
+    let productosActualizados = [...products, nuevoProducto]
 
-    //escribo el json
+    
     writeJson(productosActualizados);
 
-    //devuelvo una respuesta
+    
     res.redirect("/products/list");
 },
+
 
 edit: function (req, res){
   let productos = allProducts ();
