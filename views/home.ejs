@@ -1,34 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mi primer documento en HTML</title>
-    <link rel="stylesheet" href="/style/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-</head>
+    <%- include('./partials/head.ejs')%>
+<title>Mi primer documento en HTML</title>
 <body>
-    <header>
-    <div>
-        <ul class="nav-bar">
-        <img width="200" src="/images/dmlogoconback.jpg" />
-            
-            <li><a href="#INICIO">INICIO </a></li>
-            <li><a href="#PRODUCTOS">PRODUCTOS </a></li>
-            <li><a href="#NUESTRO LOCAL">NUESTRO LOCAL</a></li>
-            <li><a href="#QUIENES SOMOS">QUIENES SOMOS</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
-        
-            <div class= "nav-bar-right">
-                <li><a target = "_blank" href="/register">Crear cuenta  </a></i></li>
-                <li><a target = "_blank" href="/login">Iniciar Sesion</a></i></li>
-        </div>
-        </ul>
-    </div>
-    </header>   
+    <%- include('./partials/header.ejs')%>   
     <div class="slider">
             <h2>Soy el slider</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
@@ -144,15 +119,6 @@
                 <h5>Contactanos por whatsapp</h5>
             </div>
         </div>
-        <footer>
-            <div>
-                <ul class="nav-bar2">
-                    <li><a href="#NAVEGACION">NAVEGACION </a></li>
-                    <li><a href="#MEDIOS DE PAGO">MEDIOS DE PAGO </a></li>
-                    <li><a href="#CONTACTANOS">CONTACTANOS</a></li>
-                    <li><a href="#REDES SOCIALES">REDES SOCIALES</a></li>
-                </ul>
-            </div>
-        </footer>
+        <%- include('./partials/footer.ejs')%>
 </body>
 </html>

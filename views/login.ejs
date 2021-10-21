@@ -1,35 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head.ejs')%>
     <title>Iniciar Sesion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/estilos.css">
-    <link href="/style/estilosdos.css" rel="stylesheet">
-</head>
 <body>
-    <header>    
-        <div>
-        <ul class="nav-bar">
-        <img width="200" src="/images/dmlogoconback.jpg" />
-            
-            <li><a href="#INICIO">INICIO </a></li>
-            <li><a href="#PRODUCTOS">PRODUCTOS </a></li>
-            <li><a href="#NUESTRO LOCAL">NUESTRO LOCAL</a></li>
-            <li><a href="#QUIENES SOMOS">QUIENES SOMOS</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
-        
-            <div class= "nav-bar-right">
-                <li><a target = "_blank" href="/register">CREAR CUENTA |</a></li>
-                <li><a target = "_blank" href="/login">INICIAR SESION</a></li>
-            </div>
-        </ul>
-        </div>
-    </header>
+    <%- include('./partials/header.ejs')%> 
         
         
             <form action="/login" method="POST"  enctype="multipart/form-data"  class="formulario">
@@ -56,18 +30,7 @@
         </div>
             </form>
 
-            <footer>
-                <div>
-                    <ul class="nav-bar2">
-                        
-                        <li><a href="#NAVEGACION">NAVEGACION </a></li>
-                        <li><a href="#MEDIOS DE PAGO">MEDIOS DE PAGO </a></li>
-                        <li><a href="#CONTACTANOS">CONTACTANOS</a></li>
-                        <li><a href="#REDES SOCIALES">REDES SOCIALES</a></li>
-                      
-                    </ul>
-                </div>
-            </footer>            
+            <%- include('./partials/footer.ejs')%>            
     
 </body>
 </html>
