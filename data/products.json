@@ -1,13 +1,13 @@
 [
  {
-  "id": 1,
-  "name": "",
+  "id": 2,
+  "name": "Silla Alexia",
   "price": 100,
-  "category": "",
-  "description": " ",
-  "color": "",
+  "category": "Silla",
+  "description": "Silla de madera ",
+  "color": "Blanca",
   "image": "",
-  "measure": ""
+  "measure": "1,40 x 1,90"
  }
 
 ]

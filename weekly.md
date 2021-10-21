@@ -3,3 +3,5 @@ Resumen: el equipo se reunio entre 3-4 veces por semana para ver los avances del
 Resumen: En esta oportunidad el equipo al tener la baja de Fernando y al estar un poco perdidos con los ultimos temas decidimos reunirnos en varias oportunidades y trabajar en conjunto para irnos ayudandonos mutuamente. Preferimos trabajar juntos para ir viendo punto por punto en vez de dividirnos tareas. Fue una buena decision porque pudimos ir repasando y completar los puntos requeridos del sprint en tiempo y forma.
 
 Resumen: El equipo no pudo reunirse mucho, no encontro la vuelta para poder organizarse y avanzar y no pudo terminar el sprint en tiempo y forma. Deberiamos reunirnos mas veces semanalmente para ir viendo los requerimientos y los avances. Venimos muy atrasados.
+
+Resumen: El equipo se estuvo reuniendo para solucionar lo faltante de sprints anteriores que teniamos varios errores, esperamos ponernos al dia para poder seguir avanzando. Este sprint de base de datos aun no lo pudimos comenzar porque queremos solucionar los errores de los anteriores. 
