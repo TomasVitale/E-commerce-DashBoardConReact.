@@ -8,7 +8,7 @@ let mainController= {
           res.render("home")
       },
     detalleproducto:function (req,res){
-        res.render("detalleproducto")
+        res.render("detail")
     },
     
     

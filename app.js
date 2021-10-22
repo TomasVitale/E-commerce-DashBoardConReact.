@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'ejs');
 app.set('views', './views');
+app.use(methodOverride("_method"));
 
 app.listen(3000,() => {
     console.log("La app esta funcionando en la url http://localhost:3000")});
@@ -18,7 +19,7 @@ const productsRouter = require('./routers/products');
 app.use('/', mainRoutes);
 app.use('/products', productsRouter);
 app.use('/list', productsRouter);
-app.use(methodOverride("_method"));
+
 
 
 app.get('/', function(req,res){
@@ -29,8 +30,8 @@ app.get('/home', function(req,res){
        res.render('home')
         });
 
-app.get('/detalleproducto', function(req,res){
-        res.render('detalleproducto')
+app.get('/detail', function(req,res){
+        res.render('detail')
         });
     
 app.get('/register', function(req,res){

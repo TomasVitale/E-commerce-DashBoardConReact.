@@ -1,28 +1,60 @@
-<div>
-<h2>Creacion de Producto</h2>
-Nombre de Producto: <input name="formulario" method="post" action="/send.php">
-<br>
-Descripcion: <input name="formulario" method="post" action="/send.php">
-<form action="/views/productCreate" method="GET"></form>
-    Categorias: <input type="text" size="15" list = "Categorias">
-        <datalist id="Categorias">
-            <option value ="Sillas"></option>
-            <option value ="Mesas"></option>
-            <option value ="Manteles"></option>
-        </datalist>
-     <form action="/views/productCreate" method="GET"></form>
-    Colores: <input type="text" size="15" list = "Colores">
-        <datalist id="Colores">
-            <option value ="Blanco"></option>
-            <option value ="Negro"></option>
-            <option value ="Marron"></option>
-        </datalist>
-        <div class="field-wrap">
-            <button type="submit">
-              Crear producto
-            </button>
+<!DOCTYPE html>
+<html lang="en">
+  
+    <%- include("partials/head.ejs") %> 
+  
+  <body>
+    <%- include("partials/header.ejs") %> 
+
+    <h1>Crear producto:</h1>
+
+    <main >
+      <div class="">
+
+        <form action="/products/create" method="POST">
+  
+          <div class="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="name" id="name">
           </div>
-</div>
+          
+          <div class="" >
+            <label for="category">Categoria:</label>
+            <input type="text" name="category"  id="category">
+          </div>
+  
+          <div class="">
+            <label for="precio">Precio:</label>
+            <input type="number" name="price" id="precio">
+          </div>
+          <div class="">
+            <label for="measure">Medidas:</label>
+            <input type="text"  name="measure" id="measure">
+          </div>
+          <div class="">
+            <label for="color">Color:</label>
+            <input type="text" name="color" id="color">
+          </div>
+  
+          
+
+          <div class="">
+    
+            <button type="submit">
+              Crear Producto
+            </button>
+
+          </div>
+        </form>
+        
+       
+      
+      </div>
+    </main>
+    <%- include("partials/footer.ejs") %> 
+
+  </body>
+</html>
         
 
 

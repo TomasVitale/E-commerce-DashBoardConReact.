@@ -40,7 +40,7 @@ const productController = {
       return producto.id == req.params.id;
     })
 
-    res.render ("detalleproducto", {producto : productoEncontrado})
+    res.render ("detail", {producto : productoEncontrado})
   
 },
 
@@ -83,7 +83,6 @@ edit: function (req, res){
 update: function(req, res){
   let products = allProducts ();
 
-
   let productosActualizados = products.map(function(producto){
     if(producto.id == req.params.id){
       producto.name = req.body.name 
@@ -99,8 +98,9 @@ update: function(req, res){
   
  
   writeJson(productosActualizados);
+  
 
-  res.redirect("/products/detalleProducto/"+req.params.id)
+ res.redirect("/products/detail/"+req.params.id)
 
 },
 

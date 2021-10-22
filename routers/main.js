@@ -45,7 +45,7 @@ const mainController = require('../controllers/maincontroller.js');
 
 router.get('/',mainController.home);
 router.get('/home',mainController.home);
-router.get('/detalleproducto',mainController.detalleproducto);
+router.get('/detail',mainController.detalleproducto);
 router.get('/register',mainController.register);
 router.post('/register',uploadFile.single ("avatar"), validations, mainController.processRegister);
 router.get('/login',mainController.login);
