@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require("method-override");
 
 app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'ejs');
@@ -13,8 +14,11 @@ app.listen(3000,() => {
 const mainRoutes = require ('./routers/main');
 const productsRouter = require('./routers/products');
 
+
 app.use('/', mainRoutes);
 app.use('/products', productsRouter);
+app.use('/list', productsRouter);
+app.use(methodOverride("_method"));
 
 
 app.get('/', function(req,res){
@@ -39,6 +43,10 @@ app.get('/login', function(req,res){
 app.get('/productCreate',function(req,res){
         res.render('productCreate')
         });
+
+
+
+
 
 
 

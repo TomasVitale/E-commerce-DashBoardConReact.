@@ -4,13 +4,15 @@
   "nombre": "romina Baciocchi",
   "email": "rominabaciocchi@gmail.com",
   "telefono": "3344444",
-  "password": "$2a$10$05bY9HGwj9ufcOmhtZpbZ.zhTKlfZA/nWBl.sJTItCczrzhRrphci"
+  "password": "$2a$10$05bY9HGwj9ufcOmhtZpbZ.zhTKlfZA/nWBl.sJTItCczrzhRrphci",
+  "avatar" : "default.png"
  },
  {
   "id": 2,
   "nombre": "luciana gomez",
   "email": "luciana@hotmail.com",
   "telefono": "33333",
-  "password": "$2a$10$6zvVGjWirP2EbcWNW16hRuniM.bXyV3xhgJ3UJBd03YF/WIUmeDC2"
+  "password": "$2a$10$6zvVGjWirP2EbcWNW16hRuniM.bXyV3xhgJ3UJBd03YF/WIUmeDC2",
+  "avatar" : "default.png"
  }
 ]

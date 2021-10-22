@@ -1,123 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('./partials/head.ejs')%>
-    <title>Detalle del Producto</title>
+    <title>Detalle Producto</title>
+
 <body>
-    <%- include('./partials/header.ejs')%> 
-    <div><label for="">INICIO / PRODUCTOS / <b>SILLAS</b></label></div>   
-    <br>
-    
+    <%- include('./partials/header.ejs')%>
 
-    
-    
-        <div class="side-descrip">
-            <img width="750" src="/images/kara-eads-buhmhprfo3g-unsplash.jpg" alt="imagen de silla blanca">
-            
-        
-            <div class="art-descrip">  
+    <h1>Detalle de producto:</h1>
+    <section class="">
+     
+          <article>
+              <p>Este producto tiene lo siguiente:</p>
+            <ul>
+              <li>Nombre: <%= producto.name %> </li>
+              <li>Precio: <%= producto.price %> </li>
+              <li>Categoria: <%= producto.category %> </li>
+              <li>Descripcion: <%= producto.description %> </li>
+              <li>Color: <%= producto.color %> </li>
+              <li>Imagen: <%= producto.image %> </li>
+              <li>Medidas: <%= producto.measure %> </li>
+              <li>id: <%= producto.id %> </li>
 
-                <h3>SILLA EAMES BLANCA</h3>
-                <h1>$11.999</h1>
-                
-                <ul class="cont-silla">
-                <b>20% de descuento</b> pagando en efectivo
-                    
+              
             </ul>
-            
-            <a href="#VER MEDIOS DE PAGO">VER MEDIOS DE PAGO </a>
-
-            <div id="qty">
-                <p>Cantidad:</p>
-                <input form="text">
-                </div>
-                <button id="carrito">AGREGAR AL CARRITO</button>
-                </div>
-      </div>
-    
-
-<main>
-<h4>DECO MUEBLES</h4>
-
-<p><b>- MATERIAL</b>: Respaldo de polipropileno y patas de madera de haya natural</p>
-
-<p>- El producto viene desarmado. Incluye un completo Kit de armado con todos los componentes necesarios para 
-    su fácil ensamblaje.</p>
-
-<p><b>-MEDIDAS</b>: ▪ 46 cm de ancho ▪ 52 cm de profundidad ▪ 82 cm de alto ▪ 45 cm de asiento al piso.</p>
-
-<p><em>-Tambien disponible en negro y en varios colores!</em></p>
-
-------------------------------------------------------------------------------------------------------------------------------------------
-
-<h4>¿CÓMO COMPRO?</h4>
-
-<p>- Es super fácil!</p>
-
-<p>Elegí los productos que quieras de las distintas categorías.
-    Andá al carrito y clickea en "Iniciar Compra".
-    Completá tus datos y elegí donde querés recibirlo, o si preferís pasar por nuestro showroom.
-    Elegí tu forma de pago y LISTO!.</p>
-
-
-<h4>¿CÓMO PUEDO ABONAR MI COMPRA?</h4>
-
-<p>-Podes pagar tus compras con:
-Tarjeta de crédito: en nuestra tienda online podes abonar con los planes <b>AHORA 3, AHORA 6 y AHORA 12</b> cuotas 
-sin interés pagando con Mercado Pago. Comprando en el local podes aprovechar tambien los planes AHORA 12 y AHORA 
-18 y distintas promociones bancarias.</p>
-
-
-<p>Tarjeta de débito: a través de la web con todas las tarjetas de Mercado Pago. En el local con Visa débito y 
-Mastercard débito tenes un <b>10% de descuento!</b></p>
-
-
-<p>Transferencia bancaria: aprovechá un <b>20% de descuento</b> con pago via transferencia bancaria. Una 
-vez hecha la compra, nos comunicamos con vos y te enviamos los datos para realizarla!</p>
-
-<p>Efectivo: Con pago en efectivo en el local tenes un <b>20% DE DESCUENTO!</b></p>
-
-<h4>¿CUANTO CUESTA EL ENVÍO?</h4>
-
-<p>-Si sos de CABA, podes retirar por el showroom o coordinar envío con costo adicional a través de nuestro flete!</p>
-
-<p>-Si sos de otra localidad de Argentina, el envío lo definís vos! Debes elegír que transporte utilizar y 
-coordinamos para que el mismo retire por nuestro local o para que alcancemos el producto a su sucursal 
-en CABA.</p>
- 
-<h4>CONTACTANOS</h4>
-
-<p>Si queres comunicarte con nosotros por cualquier consulta escribinos por whatsapp al 9999999999 o haciendo click acá --> <a target = "_blank" href="/register">Crear cuenta  </a>!
-</p>
-</main>
-
-<main2>
-
-<div class= "contenedor">
-    <div class="articulo">
-    <img src= "/images/nathan-oakley--peWKMDCyw4-unsplash.jpg" style="width:100%"> 
-    <div class = "description"> 
-    <h3 class= "nombre">Muebles</h3>
-    </div>
-</div>
-
-<div class= "articulo">
-    <img src= "/images/nathan-oakley-WiCAU5dwom8-unsplash.jpg" style="width:100%"> 
-     <div class = "description"> 
-        <h3 class= "nombre">Mesas</h3>
-    </div>
-</div>
-
-<div class= "contenedor"></div>
-    <div class= "articulo">
-    <img src= "/images/nathan-oakley-UJWFy-5uzS8-unsplash.jpg" style="width:100%">
-    <div class = "description"> 
-    <h3 class= "nombre">Sillones</h3>
-    </div>
-   </div>
-
-</div>
-</main2>
-<%- include('./partials/footer.ejs')%>
+            <div>
+                <a href="/products/edit/<%= producto.id %> ">
+                  <button type="button">Editar:</button>
+                </a>
+              </div>
+          </article>
+        </a>
         
+      
+    </section>
+
+
+
+    
+    <%- include('./partials/footer.ejs')%>
 </body>
 </html>

@@ -25,7 +25,7 @@ const productController = {
     list: function (req, res){
       
     let products = allProducts ();
-    res.render("products", { products } )
+    res.render("list", { products } )
   },
 
   create: function (req, res){
@@ -34,15 +34,13 @@ const productController = {
 
   },
 
- 
-
-  detail: function (req, res){
+   detail: function (req, res){
     let products = allProducts ();
     let productoEncontrado= products.find(function(producto){
       return producto.id == req.params.id;
     })
 
-    res.render ("detalleproducto", {product : productoEncontrado})
+    res.render ("detalleproducto", {producto : productoEncontrado})
   
 },
 
@@ -50,7 +48,7 @@ store: function (req, res){
   let products = allProducts ();
 
     let nuevoProducto = {
-      id: productos.length + 1 ,
+      id: products.length + 1 ,
       name: req.body.name ,
       price: req.body.price,
       category: req.body.category ,
@@ -78,7 +76,7 @@ edit: function (req, res){
   
    })
 
-  res.render("product-edit-form", { products : idProducto } )
+  res.render("product-edit-form", { producto : idProducto } )
 
 },
 

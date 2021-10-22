@@ -1,6 +1,6 @@
 [
  {
-  "id": 2,
+  "id": 1,
   "name": "Silla Alexia",
   "price": 100,
   "category": "Silla",
@@ -8,6 +8,16 @@
   "color": "Blanca",
   "image": "",
   "measure": "1,40 x 1,90"
- }
+ },
+ {
+    "id": 2,
+    "name": "Silla Tomas",
+    "price": 150,
+    "category": "Silla",
+    "description": "Silla de roble ",
+    "color": "Negro",
+    "image": "",
+    "measure": "1,40 x 1,80"
+   }
 
 ]
