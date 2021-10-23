@@ -44,48 +44,72 @@ let mainController= {
     
       let userToCreate = {
          ...req.body,
-        password: bcryptjs.hashSync(req.body.password,10)
-        //avatar: req.file.filename
+        password: bcryptjs.hashSync(req.body.password,10),
+        avatar: req.file.filename
       }
-      let userCreate = User.create (userToCreate);
+      let userCreated = User.create (userToCreate);
+      
 
       return res.redirect ('/login')
     },
 
     login:function (req,res){
+       
         res.render("login")
     },
 
-    processLogin: function (req, res){
-        let userToLogin = User.findByField('email', req.body.email);
-
-                           
+    processLogin: function (req,res){
+       
+        let userToLogin = User.findByField('email', req.body.email)
+        
         if (userToLogin){
-            let correctPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-            if (correctPassword){
-                return res.send( 'ok puedes ingresar')
+            let isOkthePassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
+            if(isOkthePassword){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+               return res.redirect('perfil')
+
             }
-            return res.render('login', {
+            return res.render ('login', {
                 errors: {
                     email: {
-                        msg: "las credenciales son invalidas"
+                        msg: 'Las credenciales son invalidas'
+    
                     }
+    
+                }
+            });
+
 
         }
-    });
-}
-        return res.render('login', {
+		
+		return res.render ('login', {
             errors: {
                 email: {
-                    msg: "No se encuentra este email"
+                    msg: 'No se encuentra este mail en nuestra base de datos'
+
                 }
 
-            },
-            
+            }
         })
-    }
+      
+         
 
-    }
+    },
+
+    perfil: (req, res) => {
+		return res.render('perfil', {
+			user: req.session.userLogged
+		});
+	},
+
+    salir: (req, res) => {
+		
+		req.session.destroy();
+        return res.redirect('home');
+	}
+}
     
   
 

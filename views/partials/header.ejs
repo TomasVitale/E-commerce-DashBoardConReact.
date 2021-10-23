@@ -10,8 +10,17 @@
             <li><a href="#CONTACTO">CONTACTO</a></li>
         
             <div class= "nav-bar-right">
+                
                 <li><a target = "_blank" href="/register">Crear cuenta  </a></i></li>
                 <li><a target = "_blank" href="/login">Iniciar Sesion</a></i></li>
+                <% if (locals.isLogged){ %>
+                <li><a target = "_blank" href="/perfil">Mi Perfil</a></i> </li>
+                <li><a target = "_blank" href="/salir">Salir</a> </li>
+                <% } %>  
+                
+                
+                </ul>
+            </li>
         </div>
         </ul>
     </div>
