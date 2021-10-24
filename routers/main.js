@@ -51,7 +51,7 @@ router.get('/home',mainController.home);
 router.get('/detail',mainController.detalleproducto);
 router.get('/register',guestMiddleware,mainController.register);
 router.post('/register',uploadFile.single ("avatar"), validations, mainController.processRegister);
-router.get('/login',mainController.login);
+router.get('/login',guestMiddleware,mainController.login);
 router.post('/login',mainController.processLogin);
 router.get('/perfil',authMiddleware, mainController.perfil)
 router.get('/salir', mainController.salir)
