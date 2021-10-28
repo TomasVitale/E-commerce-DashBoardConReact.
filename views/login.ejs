@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs')%> 
-        <link rel="stylesheet" href="/style/home.css">
-    
+  
+    <%- include('./partials/head.ejs')%>
     <title>Iniciar Sesion</title>
 <body>
     <%- include('./partials/header.ejs')%> 
         
-    <section>   
-            <form action="/login" method="POST"  enctype="multipart/form-data"  class="formulario">
+        
+            <form action="/login" method="POST"  class="formulario">
 
             <div><label for="">Inicio/ Mi cuenta/ Login</label></div>      
     
         <div class= "login">
             <div class= "email">
-            <label for="email" class="form">EMAIL</label>
-            <div><input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control"></div> 
-        </div>
+                <label for="email" class="form">EMAIL</label>
+                <div><input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control">
+                <br><% if (locals.errors && errors.email) { %>
+                    <%= errors.email.msg %>
+                    <% } %>
+                </div> 
+            </div>
         
             <label for = "contraseña" class="form1">CONTRASEÑA</label>
-            <div><input type="password" class="form-control" name="password" id="password"  required></div>
+            <div><input type="password" class="form-control" name="password" id="password"></div>
              
            <div class="olvidaste-contraseña"><label for = "contraseña" class="form3">¿Olvidaste tu contraseña?</label></div>
            <label for= 'recordar'></label>
@@ -31,7 +34,7 @@
 
         </div>
             </form>
-    </section>       
+
             <%- include('./partials/footer.ejs')%>            
     
 </body>

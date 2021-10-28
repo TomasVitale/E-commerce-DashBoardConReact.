@@ -6,6 +6,6 @@ Conclusion retroespectiva cuarto sprint: El Equipo tuvo la baja del grupo de Fer
 
 Conclusion retroespectiva quinto sprint: El equipo no se pudo reunir muchas veces, tuvimos muchos problemas de organizacion, estuvimos un poco perdidos con el ultimo modulo y no pudimos terminar el sprint en tiempo y forma. Esperamos poder ponernos al dia antes de la entrega del proximo. 
 
-Conclusion retroespectiva sexto sprint : El equipo se estuvo reuniendo para corregir el proyecto en base a las devoluciones de los sprints anteriores estamos intentando ponernos al dia para poder avanzar con base de datos sino seguimos acarreando errores. Venimos un poco atrasados. 
+Conclusion retroespectiva sexto sprint : El equipo se estuvo reuniendo para corregir el proyecto en base a las devoluciones de los sprints anteriores estamos intentando ponernos al dia para poder avanzar con base de datos sino seguimos acarreando errores. Venimos un poco atrasados, pero esperamos ponernos al dia pronto.
 
 

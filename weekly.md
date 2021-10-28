@@ -7,4 +7,5 @@ Resumen: El equipo no pudo reunirse mucho, no encontro la vuelta para poder orga
 Resumen: El equipo se estuvo reuniendo para solucionar lo faltante de sprints anteriores que teniamos varios errores, esperamos ponernos al dia para poder seguir avanzando. Este sprint de base de datos aun no lo pudimos comenzar porque queremos solucionar los errores de los anteriores. 
 Estamos poniendonos al dia, pudimos solucionar lo de productos, ABM, ya podemos crear un producto editarlo borrarlo de ser necesario, nos falta ponerle un poco de estilo porque de css no hicimos nada, pero queriamos que todo funcione. Una vez funcional nos ocupamos de la imagen.
 Se termino el registro de Usuario y login completo funcional, tambien nos falta los estilos.
-Creemos que mejoramos un monton y esta ultima semana pudimos avanzar mucho.
+Se modifico la vista del home con fotos y estilo. De a poco va tomando color.
+Creemos que mejoramos un monton y estas ultimas semana pudimos avanzar mucho. Terminamos todo lo atrasado y arrancamos con base de datos.

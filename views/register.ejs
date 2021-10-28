@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+   
     <%- include('./partials/head.ejs')%>
-    <link rel="stylesheet" href="/style/home.css">
     <title>Crear cuenta</title>
 <body>
-<%- include('./partials/header.ejs')%>     
-
-    <section>
+<%- include('./partials/header.ejs')%>            
         
             <form action="/register" method="POST"   class="formulario" enctype = "multipart/form-data">
 
@@ -17,17 +15,18 @@
             <label for="nombre" class="form4">NOMBRE</label>
             <div><input type="text"  placeholder="ej.: Maria Perez" class="form-control" name="nombre" value="" class="nombre <%= locals.errors && errors.nombre ? 'is-invalid' : null %>" 
                 value = "<%= locals.oldData ? oldData.nombre : null %>">
-             
+             <br>
             <% if (locals.errors && errors.nombre) { %>
                 <%= errors.nombre.msg %>
                 <% } %>
+            
             </div>
 
             <div class= "email">
             <label for="email" class="form">EMAIL</label>
             <div><input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                 value = "<%= locals.oldData ? oldData.email : null %>">
-            <% if (locals.errors && errors.email) { %>
+                <br> <% if (locals.errors && errors.email) { %>
                 <%= errors.email.msg %>
                 <% } %>
             </div> 
@@ -36,7 +35,7 @@
         <label for="telefono" class="form5">TELEFONO</label>
         <div><input type="text"  placeholder="ej.: 3416634532" class="form-control" name="telefono" value="" class="telefono <%= locals.errors && errors.telefono ? 'is-invalid' : null %>"
             value = "<%= locals.oldData ? oldData.telefono : null %>"></div> 
-        <% if (locals.errors && errors.telefono) { %>
+        <br><% if (locals.errors && errors.telefono) { %>
             <%= errors.telefono.msg %>
             <% } %>
         
@@ -53,7 +52,7 @@
             <label>Imagen de Perfil<b></b></label>
             <br>
             <input class = "form-control" type = "file" name = "avatar">
-            <% if (locals.errors && errors.avatar) { %>
+            <br><% if (locals.errors && errors.avatar) { %>
                 <%= errors.avatar.msg %>
                 <% } %>
         </div>
@@ -67,8 +66,6 @@
 
         </div>
             </form>
-
-    </section>
             <%- include('./partials/footer.ejs')%>            
 </body>
 </html>
