@@ -1,27 +1,12 @@
-<header>
-    <div>
-        <ul class="nav-bar">
-        <img width="200" src="/images/dmlogoconback.jpg" />
-            
-            <li><a href="#INICIO">INICIO </a></li>
-            <li><a href="#PRODUCTOS">PRODUCTOS </a></li>
-            <li><a href="#NUESTRO LOCAL">NUESTRO LOCAL</a></li>
-            <li><a href="#QUIENES SOMOS">QUIENES SOMOS</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
-        
-            <div class= "nav-bar-right">
-                
-                <li><a href="/register">Crear cuenta  </a></i></li>
-                <li><a href="/login">Iniciar Sesion</a></i></li>
-                <% if (locals.isLogged){ %>
-                <li><a href="/perfil">Mi Perfil</a></i> </li>
-                <li><a href="/salir">Salir</a> </li>
-                <% } %>  
-                
-                
-                </ul>
-            </li>
-        </div>
+
+    <header>
+        <ul>
+        <li style="float:left"> <img width="250" src="/images/logo1.jpg" /></li>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#news">Productos</a></li>
+        <li><a href="#contact">Quienes Somos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li style="float:right"><a class="active" href="/login">Iniciar Sesion</a></li>
+        <li style="float:right"><a class="active" href="/register">Crear cuenta</a></li>
         </ul>
-    </div>
     </header>

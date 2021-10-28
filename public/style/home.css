@@ -1,0 +1,305 @@
+/*body */
+body {
+    background-color: #BFAFA6
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+
+                                            /*Header Deco muebles */
+
+header {
+    background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    overflow: hidden;
+    background-color: #BFAFA6;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 50px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active a {
+    background-color: black;
+  }
+
+  
+
+  div.gallery {
+    border: 1px solid #ccc;
+    width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  ;
+  
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+
+                                                    /*Slideshow */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Botones de proximo y anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posicionar la "proxima imagen" a la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color:white;
+  background-color:black;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif
+}  
+
+  
+                                              /*Las 6  imagenes */
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0px 250px 100px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 60px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  .banner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color:white;
+    background-color:black;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
+  }  
+
+
+                                                /*Las ultimas 4  imagenes */
+
+  article {
+    text-align: center;
+    color: white;
+    
+  }
+
+  div.gallery2 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive2 {
+    padding: 0px 6px 10px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+                                                        /*Footer*/
+
+  .nav-bar2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    padding-top: 55px;
+    padding-bottom: 100px;
+    color:black;
+    background-color:#BFAFA6;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif
+}
+

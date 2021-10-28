@@ -1,124 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
-    <%- include('./partials/head.ejs')%>
-<title>Mi primer documento en HTML</title>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/home.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
 <body>
-    <%- include('./partials/header.ejs')%>   
-    <div class="slider">
-            <h2>Soy el slider</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas maiores veritatis excepturi quia a ut delectus, facilis modi impedit enim culpa ipsum voluptatem, blanditiis eos labore fugit molestias minus.</p>
-    </div>
 
-    <div class="contenedorPadreMediosDePago">
-        <div class="contenedorMediosDePago1">
-            <h5>Envios a todo el pais</h5>
-        </div>
-        <div class="contenedorMediosDePago2">
-            <h5>12 cuotas sin interes</h5>
-        </div>
-        <div class="contenedorMediosDePago3">
-            <h5>Contactanos por whatsapp</h5>
-        </div>
-    </div>
+  
+    
+<header>
+    <ul>
+    <li style="float:left"> <img width="250" src="/images/logo1.jpg" /></li>
+    <li> <a href="#home">Inicio</a></li>
+    <li><a href="#news">Productos</a></li>
+    <li><a href="#contact">Quienes Somos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+    <li style="float:right"><a class="active" href="/login">Iniciar Sesion</a></li>
+    <li style="float:right"><a class="active" href="/register">Crear cuenta</a></li>
+    </ul>
+</header>
 
-    <div class="contenedorPadreVerMas1">
-        <div class="contenedorVerMas1">
-            <h2>Soy el ver mas 01</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
-        <div class="contenedorVerMas2">
-            <h2>Soy el ver mas 02</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
-        <div class="contenedorVerMas3">
-            <h2>Soy el ver mas 03</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
+
+
+<section>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/images/fondos_slider/michael-warf-f8egRYt5RGk-unsplash.jpg" style="width:100%">
     </div>
     
-    <div class="contenedorPadreVerMas2">  
-        <div class="contenedorVerMas4">
-            <h2>Soy el ver mas 04</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
-        <div class="contenedorVerMas5">
-            <h2>Soy el ver mas 05</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
-        <div class="contenedorVerMas6">
-            <h2>Soy el ver mas 06</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
+    <div class="mySlides fade">
+      <img src="/images/fondos_slider/mitch-moondae-zXFtsdi9dIc-unsplash.jpg" style="width:100%">
+      </div>
+    
+    <div class="mySlides fade">
+      <img src= "/images/fondos_slider/yehleen-gaffney-raxI_EcyfGw-unsplash.jpg"style="width:100%">
+      </div>
+    
+    <div class="mySlides fade">
+      <img src="/images/fondos_slider/phillip-goldsberry-fZuleEfeA1Q-unsplash.jpg" style="width:100%">
     </div>
-
-    <div class="contenedorDescuento">
-        <div class="descuento">
-            <h2>Soy el contenedor descuento</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id. Rerum maiores harum pariatur eum tempore fugiat, deserunt, laboriosam quod inventore ratione ut. Placeat, nemo.</p>
-        </div>
+    
+    <div class="mySlides fade">
+      <img src="/images/fondos_slider/nathan-fertig-FBXuXp57eM0-unsplash (2).jpg" style="width:100%">
     </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
-    <div class="contenedorPadreProducto1">  
-            <div class="contenedorProducto1">
-                <h2>Soy el producto 01</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto2">
-                <h2>Soy el producto 02</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto3">
-                <h2>Soy el producto 03</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto4">
-                <h2>Soy el producto 04</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-        </div>
+</section>
 
-        <div class="contenedorPadreProducto2">  
-            <div class="contenedorProducto5">
-                <h2>Soy el producto 05</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto6">
-                <h2>Soy el producto 06</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto7">
-                <h2>Soy el producto 07</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorProducto8">
-                <h2>Soy el producto 08</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-        </div>
+<div class="clearfix">
+  <div class="box" style="background-color:#5f5550">
+  <p>Envíos a todo el país</p>
+  </div>
+  <div class="box" style="background-color:#94867d">
+  <p>12 cuotas sin interés</p>
+  </div>
+  <div class="box" style="background-color:#a09289">
+  <p>Contáctanos por whatsapp</p>
+  </div>
+</div>
 
-        <div class="contenedorPadreConoceMas">  
-            <div class="contenedorConoceMas1">
-                <h2>Soy la imagen de conoce mas5</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-            <div class="contenedorConoceMas2">
-                <h2>Soy el conoce mas</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nihil ducimus itaque veritatis dolorem id.</p>
-            </div>
-        </div>
+<banner class="banner"> 20% DE DESCUENTO ABONANDO EN EFECTIVO </banner> 
 
-        <div class="contenedorPadreMediosDePago">
-            <div class="contenedorMediosDePago1">
-                <h5>Envios a todo el pais</h5>
-            </div>
-            <div class="contenedorMediosDePago2">
-                <h5>12 cuotas sin interes</h5>
-            </div>
-            <div class="contenedorMediosDePago3">
-                <h5>Contactanos por whatsapp</h5>
-            </div>
-        </div>
-        <%- include('./partials/footer.ejs')%>
+
+<section>
+<div class="responsive">
+    <div class="gallery">
+      <div class="desc">Sillas</div>
+      <a target="_blank" href= >
+      <img src="/images/sillas/silla_principal.jpg" alt="Sillones" width="600" height="400">
+      </a>
+      </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <div class="desc">Accesorios</div>
+      <a target="_blank" href="benjamin-voros-X63FTIZFbZo-unsplash.jpg">
+        <img src="/images/accesorios/accesorio_principal.jpg" alt="Mesas" width="600" height="400">
+      </a>
+      
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <div class="desc">Sillones</div>
+      <a target="_blank" href="benjamin-voros-X63FTIZFbZo-unsplash.jpg">
+        <img src="/images/sillon/sillon_principal.jpg" alt="Mesas" width="600" height="400">
+      </a>
+      </div>
+  </div>
+  
+  
+
+  
+  
+  <div class="clearfix"></div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href= >
+        <img src="/images/muebles/muebles_principal.jpg" alt="Sillones" width="600" height="400">
+      </a>
+      <div class="desc">Muebles</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href= >
+        <img src="/images/camas/cama_principal.jpg" alt="Sillones" width="600" height="400">
+      </a>
+      <div class="desc">Camas</div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="responsive">
+    <div class="gallery"> 
+      <a target="_blank" href= >
+        <img src="/images/mesas/mesa_principal.jpg" alt="Sillones" width="600" height="400">
+      </a>
+      <div class="desc">Mesas</div> 
+      </div>
+  </div>
+  
+
+ 
+  
+  <div class="clearfix"></div>
+</section>
+
+
+  <banner class="banner"> 20% DE DESCUENTO ABONANDO EN EFECTIVO </banner> 
+
+
+
+
+<section>
+  <article>
+  <div class="responsive2">
+  <div class="gallery2">
+  <img src="/images/accesorios/accesorios2.jpg" alt="Título del producto">
+  <h3>Oferta del Mes</h3>
+  <p>$ 17000</p>
+   
+  </article>
+
+  <article>
+    <div class="responsive2">
+    <div class="gallery2">
+    <img src="/images/sillon/sillones2.jpg" alt="Título del producto">
+    <h3>Oferta del Mes</h3>
+    <p>$ 15000</p>
+      
+    </article>
+
+  <article>
+    <div class="responsive2">
+    <div class="gallery2">
+    <img src="/images/sillas/silla1.jpg" alt="Título del producto">
+    <h3>Oferta del Mes</h3>
+    <p>$ 17000</p>
+      
+    </article>
+
+ <article>
+    <div class="responsive2">
+    <div class="gallery2">
+    <img src="/images/sillas/silla3.jpg" alt="Título del producto">
+    <h3>Oferta del Mes</h3>
+    <p>$ 17000</p>
+      
+    </article>
+  </section>
+
+
+
+
 </body>
+<%- include('./partials/footer.ejs')%>
 </html>
+
+
