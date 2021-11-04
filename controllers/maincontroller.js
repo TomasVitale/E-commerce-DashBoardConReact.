@@ -113,8 +113,12 @@ let mainController= {
 		res.clearCookie('userEmail');
 		req.session.destroy();
         return res.redirect('home');
-	}
+	},
+    carrito: ( req,res) =>{
+        return res.render('shopCart')
+    }
 }
+
     
   
 

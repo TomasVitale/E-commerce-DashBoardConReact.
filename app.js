@@ -33,6 +33,7 @@ const productsRouter = require('./routers/products');
 app.use('/', mainRoutes);
 app.use('/products', productsRouter);
 app.use('/list', productsRouter);
+app.use('/shopCart', productsRouter )
 
 
 
@@ -58,7 +59,6 @@ app.get('/login', function(req,res){
 app.get('/productCreate',function(req,res){
         res.render('productCreate')
         });
-
 
 
 
