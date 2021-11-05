@@ -21,6 +21,7 @@ body{
     margin-top: 10px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 
 }
 .box3{
@@ -31,6 +32,11 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.box32{
+    padding: 10px;
+    
 }
 .iconoX{
     box-sizing: border-box;
@@ -41,16 +47,16 @@ body{
     border-bottom: 2px solid grey;
     display: flex;
     font-size: 25px;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 .box5{
     display: flex;
     box-sizing: border-box;
     font-size: 25px;
     border-bottom: 2px solid grey;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 .box6{
     display: flex;
@@ -79,5 +85,6 @@ body{
     border: 2px solid grey;
     display: auto;
     box-sizing: border-box;
-    margin: 5px;
+    padding: auto;
+    margin: auto;
 }
