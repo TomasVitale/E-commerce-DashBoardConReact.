@@ -80,6 +80,8 @@ CREATE TABLE `products` (
   `color` text DEFAULT NULL,
   `measure` varchar(100) DEFAULT NULL,
   `category_id` int(11) NOT NULL,
+  `image` binary(1) NOT NULL,
+  `description` text DEFAULT NULL,
   PRIMARY KEY (`id_products`),
   KEY `products_FK` (`category_id`),
   CONSTRAINT `products_FK` FOREIGN KEY (`category_id`) REFERENCES `category` (`category_id`)
@@ -165,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-16 10:06:35
+-- Dump completed on 2021-11-16 10:43:47
