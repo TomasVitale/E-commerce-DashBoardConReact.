@@ -2,16 +2,38 @@
     <header>
         <ul>
         <link rel="stylesheet" href="style/home.css">
+
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
             
         <li style="float:left"> <img width="250" src="/images/logo1.jpg" /></li>
-        <li><a href="#home">Inicio</a></li>
+        <li><a href="/home">Inicio</a></li>
         <li><a href="#news">Productos</a></li>
         <li><a href="#contact">Quienes Somos</a></li>
         <li><a href="#contact">Contacto</a></li>
-        <li style="float:right"><a class="active" href="/login">Iniciar Sesion</a></li>
-        <li style="float:right"><a class="active" href="/register">Crear cuenta</a></li>
-        <li style="float:right"><a href="/perfil">Mi Perfil</a></i> </li>
-        <li style="float:right"><a href="/salir">Salir</a> </li>
-        </ul>
+   
+    <ul >
+        <% if (locals.isLogged) { %>
+            
+               <a>
+                    <img src="/images/avatars/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
+                    Hola <%= locals.userLogged.nombre %> 
+                </a>
+                <ul >
+                    <a  href="/perfil" class= form4>Mi perfil</a>
+                    
+                    <a href="/salir" class= form4> Salir</a>
+                </ul>
+           
+        <% } else { %>
+            
+            <li><a class="active" href="/register">Crear cuenta</a></li>
+            <li><a class="active" href="login">Iniciar Sesión</a></li>
+        
+        <% } %>
+    
+    
+    </ul>
+    
+            
+    </ul>
     </header>

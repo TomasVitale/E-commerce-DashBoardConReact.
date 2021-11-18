@@ -9,30 +9,38 @@
         
             <form action="/login" method="POST"  class="formulario">
 
-            <div><label for="">Inicio/ Mi cuenta/ Login</label></div>      
-    
-        <div class= "login">
-            <div class= "email">
-                <label for="email" class="form">EMAIL</label>
-                <div><input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control">
-                <br><% if (locals.errors && errors.email) { %>
-                    <%= errors.email.msg %>
-                    <% } %>
-                </div> 
-            </div>
-        
-            <label for = "contraseña" class="form1">CONTRASEÑA</label>
-            <div><input type="password" class="form-control" name="password" id="password"></div>
-             
-           <div class="olvidaste-contraseña"><label for = "contraseña" class="form3">¿Olvidaste tu contraseña?</label></div>
-           <label for= 'recordar'></label>
-           <div class="recordar"><input type= "radio"  name= "recordar" class="radio">Recordar mis datos</div>
-            <button type="submit"  value="Crear-cuenta" class= "crear-cuenta">INICIAR SESION </button>
+                <div><label for=""><a href="/home" class= "form3">Inicio /</a> <a href="/login" class= "form3">Mi Cuenta /</a> Login</label></div>      
 
-            <div><label for = "no-tenes-cuenta" class="form2">¿No tenes cuenta? Crear cuenta</label></div>
+            <br>
+            <Section class= 'formulario-registro'> 
+            <div class = "form-group">
+            
+                <label for="email" class='registro-label'>EMAIL</label>
+                <br>
+                <input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class = "registro">
+                <br><% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                    <%= errors.email.msg %>
+                    </div>
+                    <% } %>
+               
+            </div>
+            <div class = "form-group">
+            <label for = "contraseña" class='registro-label'>CONTRASEÑA</label>
+            <br>
+            <div><input type="password" class = "registro" name="password" id="password"></div>
+             <br>
+            </div>
+           <label for = "contraseña" class='olvidaste-contraseña'>¿Olvidaste tu contraseña?</label>
+           <label for= 'recordar'></label>
+           <div class="radio"><input type= "radio"  name= "recordar" class="radio">Recordar mis datos</div>
+            <button type="submit"  value="Crear-cuenta" class= "crear-cuenta">INICIAR SESIÓN </button>
+
+            <div><label for = "no-tenes-cuenta" class="cuenta">¿No tenes cuenta?<a href="/register" class= "form3"> Crear cuenta</a></label></div>
             
 
         </div>
+            </Section>
             </form>
 
             <%- include('./partials/footer.ejs')%>            

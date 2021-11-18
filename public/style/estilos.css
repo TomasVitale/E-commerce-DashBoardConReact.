@@ -1,3 +1,5 @@
+
+
 .nav-bar {
     display: flex;
     list-style-type: none;
@@ -23,55 +25,65 @@
     margin-right: 5px
 }
 
-.login{
-    text-align: center;
-    width: 90%;
-    height: 90%;
-    margin: 35px;
-    font-family: "roboto";
-    font-size: 16px;
-}
-.form{
-    margin:15px;
-    font-size: 16px;
-    padding-right: 467px;
-}
-.form1{
-    margin: 15px;
-    font-size: 16px;
-    padding-right: 410px;
-      
-}
 
 .form2{
-    margin:15px;
+    color: black;
+    text-align: center;
+    
+}
+.form3 {
+    text-decoration: none;
+    color: black;
     font-size: 16px;
+    
+}
+.form4 {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    
+}
+.form4:hover{
+    background-color: #111;
+
+}
+
+.form-group{
+    
+    display: block;
+    margin-left: 430px;
+    margin-top: 20px;
+}
+
+.registro-label{
     margin-bottom: 20px;
-       
+
 }
-.form3{
-    margin:15px;
-    font-size: 16px;
-    padding-right: 335px;
-      
+.registro {
+    margin-top: 5px;
+    padding: 8px;
+    padding-right: 38%;
+
 }
-.form4{
-    margin:15px;
-    font-size: 16px;
-    padding-right: 445px;
-      
+
+.avatar {
+    
+    width: 40%;
+    padding: 0px;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: "roboto";
+    font-size: 20px;
+    margin-top: 10px;
 }
-.form5{
-    margin:15px;
-    font-size: 16px;
-    padding-right: 435px;
-      
-}
-.form6{
-    margin:15px;
-    font-size: 16px;
-    padding-right: 320px;
-      
+
+
+
+.text-danger {
+    font-family: "roboto";
+    font-size: 20px;
+    color: red;
 }
 .barra{
     margin-bottom: 25px;
@@ -81,26 +93,39 @@
     margin-top: 15px;
     margin-bottom: 15px;
     display: block;
-    font-size: 12px;
+    font-size: 20px;
         
 }
 
 .olvidaste-contraseña{
-    margin-bottom: 15px;
+    
+    font-family: "roboto";
+    font-size: 18px;
+    margin-left: 430px;
+    
+    
 }
 .crear-cuenta{
+    
     border:none;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-bottom: 15px;
     background-color: #f1c40f;
     color: black;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 150px 10px 150px;
     border-radius: 10px;
+    font-family: "roboto";
+    font-size: 20px;
+    text-align: center;
     
 }
-.no-tenes-cuenta{
+.cuenta{
     
-    text-align: right;
+    text-align: center;
+    font-family: "roboto";
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 580px;
 }
 
 
@@ -124,35 +149,22 @@
 body{
     width: 100%;
 }
-.crearcuenta{
-    text-align: center;
-    width: 90%;
-    height: 90%;
-    margin: 35px;
-    font-family: "roboto";
-    font-size: 16px;
-}
-.telefono{
-    margin-bottom: 15px;
-    border: 1px solid rgba(4, 4, 4, 0.3);
-    color: black;
-    margin:0px;
-    padding: 5px 500px 5px 5px;
-        
-}
-.nombre{
-    margin-bottom: 15px;
-    border: 1px solid rgba(4, 4, 4, 0.3);
-    color: black;
-    margin:0px;
-    padding: 5px 500px 5px 5px;
-        
-}
-.recordar{
-    padding: 5px 370px 5px 0px;
-    margin-bottom: 20px;
-}
+
 
 .contraseña{
     margin-top: 15px;
 }
+
+.radio {
+    text-align: center;
+    margin-top: 25px;;
+    font-family: "roboto";
+    font-size: 20px;
+       
+    
+}
+
+.imagen-avatar{
+    margin-left: 50px;
+}
+

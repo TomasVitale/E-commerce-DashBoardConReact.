@@ -7,65 +7,90 @@
 <%- include('./partials/header.ejs')%>            
         
             <form action="/register" method="POST"   class="formulario" enctype = "multipart/form-data">
+              
 
-            <div><label for="">Inicio/ Mi cuenta/ Crear cuenta</label></div>      
+            <div><label for=""><a href="/home" class= "form3">Inicio /</a> <a href="/login" class= "form3">Mi Cuenta /</a> Crear Cuenta</label></div>      
     
-        <div class= "crearcuenta">
-           
-            <label for="nombre" class="form4">NOMBRE</label>
-            <div><input type="text"  placeholder="ej.: Maria Perez" class="form-control" name="nombre" value="" class="nombre <%= locals.errors && errors.nombre ? 'is-invalid' : null %>" 
+            <Section class= 'formulario-registro'>  
+
+
+            <div class = "form-group">
+            <label for="nombre" class= 'registro-label'>NOMBRE</label> 
+            <br>
+            <input class = "registro" type="text"  placeholder="ej.: Maria Perez" class="form-control" name="nombre" value="" class="nombre <%= locals.errors && errors.nombre ? 'is-invalid' : null %>" 
                 value = "<%= locals.oldData ? oldData.nombre : null %>">
              <br>
             <% if (locals.errors && errors.nombre) { %>
+                <div class="text-danger">
                 <%= errors.nombre.msg %>
+            </div>
                 <% } %>
             
-            </div>
+            
 
-            <div class= "email">
-            <label for="email" class="form">EMAIL</label>
-            <div><input type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+            </div>
+            <div class = "form-group">
+            <label for="email" class= 'registro-label' >EMAIL</label>
+            <br>
+            <input class = "registro" type="email"  placeholder="ej.: tunombre@email.com" name="email" value="" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
                 value = "<%= locals.oldData ? oldData.email : null %>">
                 <br> <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
                 <%= errors.email.msg %>
+            </div>
                 <% } %>
-            </div> 
-        </div>
+             
         
-        <label for="telefono" class="form5">TELEFONO</label>
-        <div><input type="text"  placeholder="ej.: 3416634532" class="form-control" name="telefono" value="" class="telefono <%= locals.errors && errors.telefono ? 'is-invalid' : null %>"
-            value = "<%= locals.oldData ? oldData.telefono : null %>"></div> 
-        <br><% if (locals.errors && errors.telefono) { %>
+            </div>
+
+            <div class = "form-group">
+        <label for="telefono" class= 'registro-label' >TELEFONO</label>
+        <br>
+        <input class = "registro" type="text"  placeholder="ej.: 3416634532" class="form-control" name="telefono" value="" class="telefono <%= locals.errors && errors.telefono ? 'is-invalid' : null %>"
+            value = "<%= locals.oldData ? oldData.telefono : null %>">
+            <br><% if (locals.errors && errors.telefono) { %>
+                <div class="text-danger">
             <%= errors.telefono.msg %>
+        </div>
             <% } %>
         
-        <div class= "contraseña">
-            <label for = "contraseña" class="form1">CONTRASEÑA</label>
-            <div><input type="password" class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"  name="password" id="contraseña"  
-                value = "<%= locals.oldData ? oldData.password : null %>"></div>
-            <% if (locals.errors && errors.password) { %>
-                <%= errors.password.msg %>
-                <% } %>
         </div>
-
-        <div class = "avatar">
-            <label>Imagen de Perfil<b></b></label>
+        <div class = "form-group">
+            <label for = "contraseña" class= 'registro-label' >CONTRASEÑA</label>
             <br>
-            <input class = "form-control" type = "file" name = "avatar">
+            <input class = "registro" type="password" class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"  name="password" id="contraseña"  
+                value = "<%= locals.oldData ? oldData.password : null %>">
+                <br><% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                <%= errors.password.msg %>
+            </div>
+                <% } %>
+        
+            </div>
+            <div class = "form-group">
+            <label class= 'registro-label'>IMAGEN DE PERFIL</label>
+            <br>
+            
+            <input class = "avatar" type = "file" name = "avatar" >
+            
             <br><% if (locals.errors && errors.avatar) { %>
+                <div class="text-danger">
                 <%= errors.avatar.msg %>
+            </div>
                 <% } %>
         </div>
+    
                 
-        <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+        
             <button type="submit"  value="Crear-cuenta" class= "crear-cuenta">CREAR CUENTA </button>
 
-            <div><label for = "no-tenes-cuenta" class="form2">¿Ya tenes una cuenta? Iniciar sesion</label></div>
+           <div class= "form2"><label for = "no-tenes-cuenta"  >¿Ya tenés una cuenta?<a href="/login" class= "form3"> Iniciar Sesion</label></a></div>
             
 
-
+        </Section>
         </div>
             </form>
-            <%- include('./partials/footer.ejs')%>            
+            <%- include('./partials/footer.ejs')%>   
+                 
 </body>
 </html>
