@@ -1,18 +1,16 @@
-const { DataTypes } = require("sequelize/types");
-
 module.exports = (sequelize,dataTypes) => {
 
 const ProductCarrito = sequelize.define('roductCarrito',cols,config)
 
 cols = {
     id: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         autoIncrement: true,
         primaryKey : true,
         allowNull: false,
     },
     id_products: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         foreignKey: true,
         allowNull: false,
     },
@@ -22,30 +20,32 @@ cols = {
         allowNull: false,
     },
     createdAt:{ 
-       type: DataTypes.DATE
+       type: dataTypes.DATE
     },
 
     updatedAt: {
-        type: DataTypes.DATE
+        type: dataTypes.DATE
     },
 
     name: {
-        type: DataTypes.TEXT,
+        type: dataTypes.TEXT,
         allowNull : false,
     },
     price: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: false,
     
     },
     cantidadProductos: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: false
     },
     precioSentado: {
-        type: DataTypes.DECIMAL
+        type: dataTypes.DECIMAL
     }},
 config = {
         timestamps: true,
+        underscored: true,
+        paranoid: true,
     }}
 return ProductCarrito;

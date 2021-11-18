@@ -140,7 +140,7 @@ CREATE TABLE `user` (
   `email` varchar(29) NOT NULL,
   `telefono` varchar(19) NOT NULL,
   `password` varchar(100) NOT NULL,
-  `avatar` binary(1) NOT NULL,
+  `avatar` varchar(100) NOT NULL,
   PRIMARY KEY (`id_user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;

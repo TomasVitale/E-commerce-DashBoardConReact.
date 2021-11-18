@@ -6,21 +6,21 @@ module.exports = (sequelize,dataTypes) => {
         
         cols = {
             id: {
-                type: DataTypes.INTEGER,
+                type: dataTypes.INTEGER,
                 autoIncrement: true,
                 primaryKey : true,
                 allowNull: false,
             },
             createdAt:{ 
-               type: DataTypes.DATE
+               type: dataTypes.DATE
             },
         
             updatedAt: {
-                type: DataTypes.DATE
+                type: dataTypes.DATE
             },
         
             name: {
-                type: DataTypes.STRING,
+                type: dataTypes.STRING,
                 allowNull : false,
             },
         

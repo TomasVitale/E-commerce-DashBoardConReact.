@@ -1,4 +1,3 @@
-const { DataTypes } = require("sequelize/types");
 module.exports = (sequelize,dataTypes) => {
 
 const CarritoCompra = sequelize.define('CarritoDeCompra',cols,config)

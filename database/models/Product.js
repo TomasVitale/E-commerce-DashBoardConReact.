@@ -6,46 +6,38 @@ const Product = sequelize.define('Product',cols,config)
 
 cols = {
     id: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         autoIncrement: true,
         primaryKey : true,
         allowNull: false,
     },
-    createdAt:{ 
-       type: DataTypes.DATE
-    },
-
-    updatedAt: {
-        type: DataTypes.DATE
-    },
-
     name: {
-        type: DataTypes.TEXT,
+        type: dataTypes.TEXT,
         allowNull : false,
     },
     price: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         allowNull: false,
     },
     color: {
-        type: DataTypes.TEXT,
+        type: dataTypes.TEXT,
         allowNull: false,
     },
     measure: {
-        type: DataTypes.STRING,
+        type: dataTypes.STRING,
         allowNull: true,
     },
     category_id: {
-        type: DataTypes.INTEGER,
+        type: dataTypes.INTEGER,
         foreignKey: true,
         allowNull: false,
     },
     image: {
-        // type: DataTypes.VARCHAR, PREGUNTAR - 
+        type: dataTypes.VARCHAR
 
     },
     description: {
-        type: DataTypes.TEXT,
+        type: dataTypes.TEXT,
         allowNull: false,
     }
 

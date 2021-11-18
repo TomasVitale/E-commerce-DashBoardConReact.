@@ -5,37 +5,37 @@ const Usuario = sequelize.define('Usuario',cols,config)
     
     cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             autoIncrement: true,
             primaryKey : true,
             allowNull: false,
         },
         createdAt:{ 
-           type: DataTypes.DATE
+           type: dataTypes.DATE
         },
     
         updatedAt: {
-            type: DataTypes.DATE
+            type: dataTypes.DATE
         },
     
         name: {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
             allowNull : false,
         },
         email: {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
             allowNull: false,
         },
         telefono: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             allowNull: false,
         },
         password: {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
             allowNull: true,
         },
         avatar: {
-            // type: DataTypes.INTEGER, - Preguntar tipo de Dato -
+            type: dataTypes.STRING,
             allowNull: false,
         }
        },
