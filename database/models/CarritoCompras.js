@@ -4,30 +4,30 @@ const CarritoCompra = sequelize.define('CarritoDeCompra',cols,config)
     
     cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             autoIncrement: true,
             primaryKey : true,
             allowNull: false,
         },
         id_user: {
-            type: DataTypes.STRING,
+            type: dataTypes.STRING,
             foreignKey: true,
             allowNull: false,
 
         },
         createdAt:{ 
-           type: DataTypes.DATE
+           type: dataTypes.DATE
         },
     
         updatedAt: {
-            type: DataTypes.DATE
+            type: dataTypes.DATE
         },
         precioTotal: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             allowNull: false,
         },
         cantidadProductos: {
-            type: DataTypes.INTEGER,
+            type: dataTypes.INTEGER,
             allowNull: true,
         },
        },
