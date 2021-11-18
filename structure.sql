@@ -77,7 +77,7 @@ CREATE TABLE `products` (
   `id_products` int(11) NOT NULL AUTO_INCREMENT,
   `name` text NOT NULL,
   `price` int(11) NOT NULL,
-  `color` text DEFAULT NULL,
+  `color` text NOT NULL,
   `measure` varchar(100) DEFAULT NULL,
   `category_id` int(11) NOT NULL,
   `image` binary(1) NOT NULL,

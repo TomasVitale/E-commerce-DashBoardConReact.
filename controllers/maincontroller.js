@@ -114,7 +114,7 @@ let mainController= {
 		req.session.destroy();
         return res.redirect('home');
 	},
-    carrito: ( req,res) =>{
+    carrito: (req,res) =>{
         return res.render('shopCart')
     }
 }
