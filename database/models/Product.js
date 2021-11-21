@@ -36,7 +36,7 @@ cols = {
     },
     description: {
         type: dataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
     }
 
     }},
