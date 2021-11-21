@@ -7,8 +7,10 @@
 <body>
     <%- include('./partials/header.ejs')%>
 
+    
     <h1>Listado de productos:</h1>
-    <section class="">
+    <section class="productos">
+    
       <% products.forEach(function(producto){ %>
         <a href="/products/detail/<%= producto.id %>">
           <article>
@@ -26,16 +28,12 @@
             </ul>
           </article>
         </a>
+      
         <% }) %> 
       
-    </section>
+      </section>
 
-
-
-
-
-
-    
+   
     <%- include('./partials/footer.ejs')%>
 </body>
 </html>
