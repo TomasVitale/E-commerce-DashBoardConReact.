@@ -33,6 +33,20 @@ const productController = {
     res.render("/productCreate")
 
   },
+  crear: function (req, res){
+    db.products.create({
+    name: req.body.name,
+    price: req.body.price,
+    category_id: req.body.category_id,
+    color:req.body.color,
+    description: req.body.description,
+    image:req.body.image,
+    measure: req.body.measure,
+
+    })
+    res.redirect ('/productCreate')
+
+  },
 
    detail: function (req, res){
     let products = allProducts ();
