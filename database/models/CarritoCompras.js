@@ -1,38 +1,45 @@
 module.exports = (sequelize,dataTypes) => {
+let alias = "CarritoCompra";
 
-const CarritoCompra = sequelize.define('CarritoDeCompra',cols,config)
-    
-    cols = {
-        id: {
-            type: dataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey : true,
-            allowNull: false,
-        },
-        id_user: {
-            type: dataTypes.STRING,
-            foreignKey: true,
-            allowNull: false,
+let cols = {
+    id: {
+        type: dataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey : true,
+        allowNull: false,
+    },
+    id_user: {
+        type: dataTypes.STRING,
+        foreignKey: true,
+        allowNull: false,
 
-        },
-        createdAt:{ 
-           type: dataTypes.DATE
-        },
+    },
+    createdAt:{ 
+       type: dataTypes.DATE
+    },
+
+    updatedAt: {
+        type: dataTypes.DATE
+    },
+    precioTotal: {
+        type: dataTypes.INTEGER,
+        allowNull: false,
+    },
+    cantidadProductos: {
+        type: dataTypes.INTEGER,
+        allowNull: true,
+    },
+};
+
+let config = {
+    timestamps: true,
+    tablename: "Carrito De Compras",
+}
+
+
+const CarritoCompra = sequelize.define(alias,cols,config)
     
-        updatedAt: {
-            type: dataTypes.DATE
-        },
-        precioTotal: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-        },
-        cantidadProductos: {
-            type: dataTypes.INTEGER,
-            allowNull: true,
-        },
-       },
-        config = {
-            timestamps: true,
-            tablename: "Carrito De Compras",
-        }}
-    return Usuario;
+   
+       
+    return CarritoCompra
+};

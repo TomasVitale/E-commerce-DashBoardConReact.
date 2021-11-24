@@ -1,46 +1,51 @@
 module.exports = (sequelize,dataTypes) => {
 
-const Product = sequelize.define('Product',cols,config)
+    let alias = "Product"
 
-cols = {
-    id: {
-        type: dataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey : true,
-        allowNull: false,
-    },
-    name: {
-        type: dataTypes.TEXT,
-        allowNull : false,
-    },
-    price: {
-        type: dataTypes.INTEGER,
-        allowNull: false,
-    },
-    color: {
-        type: dataTypes.TEXT,
-        allowNull: false,
-    },
-    measure: {
-        type: dataTypes.STRING,
-        allowNull: true,
-    },
-    category_id: {
-        type: dataTypes.INTEGER,
-        foreignKey: true,
-        allowNull: false,
-    },
-    image: {
-        type: dataTypes.VARCHAR
+    let cols = {
+        id: {
+            type: dataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey : true,
+            allowNull: false,
+        },
+        name: {
+            type: dataTypes.TEXT,
+            allowNull : false,
+        },
+        price: {
+            type: dataTypes.INTEGER,
+            allowNull: false,
+        },
+        color: {
+            type: dataTypes.TEXT,
+            allowNull: false,
+        },
+        measure: {
+            type: dataTypes.STRING,
+            allowNull: true,
+        },
+        category_id: {
+            type: dataTypes.INTEGER,
+            foreignKey: true,
+            allowNull: false,
+        },
+        image: {
+            type: dataTypes.TEXT,
+    
+        },
+        description: {
+            type: dataTypes.TEXT,
+            allowNull: true,
+        }
+    
+        },
+        config = {
+            timestamps: true,
+        }
 
-    },
-    description: {
-        type: dataTypes.TEXT,
-        allowNull: true,
-    }
+const Product = sequelize.define(alias,cols,config)
 
-    }},
-    config = {
-        timestamps: true,
-    }
-return Product;
+
+return Product
+};

@@ -1,9 +1,9 @@
 
 module.exports = (sequelize,dataTypes) => {
 
-const Usuario = sequelize.define('Usuario',cols,config)
-    
-    cols = {
+    let alias = "Usuario";
+
+    let cols = {
         id: {
             type: dataTypes.INTEGER,
             autoIncrement: true,
@@ -38,8 +38,14 @@ const Usuario = sequelize.define('Usuario',cols,config)
             type: dataTypes.STRING,
             allowNull: false,
         }
-       },
-        config = {
+       };
+       let config = {
             timestamps: true,
-        }}
-    return Usuario;
+        }
+
+const Usuario = sequelize.define(alias,cols,config)
+    
+
+    
+    return Usuario
+};

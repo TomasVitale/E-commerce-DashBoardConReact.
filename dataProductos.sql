@@ -1,4 +1,3 @@
-
 insert into products (id_products, name, price, category_id, color, description, image , measure) values (1, 'Silla Alexia', '15090', 1, 'Indigo', null, 'http://dummyimage.com/156x100.jpg/dddddd/000000', null);
 insert into products (id_products, name, price, category_id, color, description, image , measure) values (2, 'Mesa Pino', '29701', 2, 'Turquoise', null, 'http://dummyimage.com/140x100.jpg/cc0000/ffffff', null);
 insert into products (id_products, name, price, category_id, color, description, image , measure) values (3, 'Silla Ofelia', '49604', 3, 'Red', null, 'http://dummyimage.com/201x100.jpg/5fa2dd/ffffff', null);

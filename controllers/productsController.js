@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const db = require('../database/models')
 
 //llamar a todos los productos del Json
 function allProducts(){
@@ -44,7 +45,7 @@ const productController = {
     measure: req.body.measure,
 
     })
-    res.redirect ('/productCreate')
+    res.redirect('/productCreate')
 
   },
 
@@ -58,7 +59,7 @@ const productController = {
   
 },
 
-store: function (req, res){
+/*store: function (req, res){
   let products = allProducts ();
 
     let nuevoProducto = {
@@ -79,7 +80,7 @@ store: function (req, res){
 
     
     res.redirect("/products/list");
-},
+},*/
 
 
 edit: function (req, res){
