@@ -25,11 +25,7 @@ module.exports = (sequelize,dataTypes) => {
             type: dataTypes.STRING,
             allowNull: true,
         },
-        category_id: {
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            allowNull: false,
-        },
+        
         image: {
             type: dataTypes.TEXT,
     
@@ -41,10 +37,21 @@ module.exports = (sequelize,dataTypes) => {
     
         },
         config = {
-            timestamps: true,
+            timestamps: false,
+            underscored: true,
         }
 
 const Product = sequelize.define(alias,cols,config)
+
+Product.associate = function ( models) {
+    Product.belongsTo (models.Category, {
+
+        as: "category",
+
+        foreignKey: "category_id"
+
+    })
+};
 
 
 return Product

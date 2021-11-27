@@ -10,13 +10,6 @@ module.exports = (sequelize,dataTypes) => {
             primaryKey : true,
             allowNull: false,
         },
-        createdAt:{ 
-           type: dataTypes.DATE
-        },
-    
-        updatedAt: {
-            type: dataTypes.DATE
-        },
     
         name: {
             type: dataTypes.STRING,

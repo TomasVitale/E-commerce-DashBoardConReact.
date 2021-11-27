@@ -56,10 +56,6 @@ app.get('/register', function(req,res){
 app.get('/login', function(req,res){
         res.render('login')
         });  
-app.get('/productCreate',function(req,res){
-        res.render('productCreate')
-        });
-
 
 
 

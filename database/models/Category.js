@@ -9,14 +9,6 @@ module.exports = (sequelize,dataTypes) => {
             primaryKey : true,
             allowNull: false,
         },
-        createdAt:{ 
-           type: dataTypes.DATE
-        },
-    
-        updatedAt: {
-            type: dataTypes.DATE
-        },
-    
         nombre: {
             type: dataTypes.STRING,
             allowNull : false,
@@ -24,10 +16,20 @@ module.exports = (sequelize,dataTypes) => {
     
        };
       let config = {
-            timestamps: true,
+            timestamps: false,
+            tableName: "category",
+            underscored: true,
         }
 
-    const Category = sequelize.define(alias,cols,config)
+    const Category = sequelize.define(alias,cols,config);
+
+    Category.associate = function ( models){
+
+    Category.hasMany(models.Product,{
+        foreingKey:"category_id"
+
+    })};
+    
         
         
         return Category

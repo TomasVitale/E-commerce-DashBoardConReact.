@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 const db = require('../database/models')
-
 //llamar a todos los productos del Json
 function allProducts(){
   
@@ -23,33 +22,32 @@ function writeJson(array){
 
 const productController = {
 
-    list: function (req, res){
+    list: (req, res) => {
       
-    let products = allProducts ();
-    res.render("list", { products } )
-  },
+    db.Product.findAll()
+    .then(function ( Products ){
+     return res.render("list", {Products} )})
 
-  create: function (req, res){
-        
-    res.render("/productCreate")
+},
 
-  },
-  crear: function (req, res){
-    db.products.create({
-    name: req.body.name,
-    price: req.body.price,
-    category_id: req.body.category_id,
-    color:req.body.color,
-    description: req.body.description,
-    image:req.body.image,
-    measure: req.body.measure,
+  store: (req, res) => {
+    const product = {
+      name: req.body.name,
+      price: req.body.price,
+      category_id: req.body.category,
+      color:req.body.color,
+      description: req.body.description,
+      image: "prueba",
+      measure: req.body.measure,
+    }
+    db.Product.create(product).then(_=> 
+      res.redirect('list')
+      );
+   
+    },
+    
 
-    })
-    res.redirect('/productCreate')
-
-  },
-
-   detail: function (req, res){
+   detail:(req, res) => {
     let products = allProducts ();
     let productoEncontrado= products.find(function(producto){
       return producto.id == req.params.id;
@@ -59,8 +57,15 @@ const productController = {
   
 },
 
-/*store: function (req, res){
-  let products = allProducts ();
+create: function (req, res){
+
+  db.Category.findAll()
+  .then((categories)=>{
+    res.render('productCreate',{categories:categories})
+
+  })
+
+ /* let products = allProducts ();
 
     let nuevoProducto = {
       id: products.length + 1 ,
@@ -79,37 +84,51 @@ const productController = {
     writeJson(productosActualizados);
 
     
-    res.redirect("/products/list");
-},*/
+    res.redirect("/products/list");*/
+},
 
 
-edit: function (req, res){
-  let products = allProducts ();
-
-  let idProducto= products.find(function(producto){
-    return producto.id == req.params.id;
+edit: async (req, res) =>{
   
-   })
+  let categories = await db.Category.findAll(); 
 
-  res.render("product-edit-form", { producto : idProducto } )
+ let producto = await db.Product.findByPk(req.params.id);
+
+    res.render('product-edit-form',{categories:categories, producto:producto});
+  
 
 },
 
-update: function(req, res){
-  let products = allProducts ();
+update: async (req, res)=> {
 
-  let productosActualizados = products.map(function(producto){
-    if(producto.id == req.params.id){
-      producto.name = req.body.name 
-      producto.price = req.body.price
-      producto.category = req.body.category 
-      producto.color = req.body.color
-      producto.description = req.body.description
-      producto.measure = req.body.measure
-      producto.image = req.body.image
+ await db.Product.update({
+    name: req.body.name,
+    price: req.body.price,
+    category_id: req.body.category,
+    color:req.body.color,
+    description: req.body.description,
+    image: "prueba",
+    measure: req.body.measure,
+},
+  {
+    where: {
+      id: req.params.id
     }
-    return producto
-  })
+   });
+   res.redirect('/products/list');
+
+  // let productosActualizados = products.map(function(producto){
+  //   if(producto.id == req.params.id){
+  //     producto.name = req.body.name 
+  //     producto.price = req.body.price
+  //     producto.category = req.body.category 
+  //     producto.color = req.body.color
+  //     producto.description = req.body.description
+  //     producto.measure = req.body.measure
+  //     producto.image = req.body.image
+  //   }
+  //   return producto
+  // })
   
  
   writeJson(productosActualizados);
@@ -119,7 +138,7 @@ update: function(req, res){
 
 },
 
-destroy: function (req, res){
+destroy: (req, res) =>{
   let products = allProducts ();
 
 
@@ -131,9 +150,7 @@ destroy: function (req, res){
 
   
   res.redirect("/products/list");
-}
-}
+}};
 
-  
 
 module.exports = productController;

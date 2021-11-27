@@ -12,7 +12,7 @@ router.get("/edit/:id", productsController.edit);
 router.put("/edit/:id", productsController.update);
 router.delete("/delete/:id" , productsController.destroy);
 router.get('/shopCart', mainController.carrito);
-router.get ("/crear", productsController.crear );
-router.post ("/crear", productsController.crear )
+router.get ("/create", productsController.create );
+router.post ("/create", productsController.store );
 
-module.exports = router
+module.exports = router;
