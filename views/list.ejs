@@ -8,22 +8,27 @@
     <%- include('./partials/header.ejs')%>
 
     
-    <h1>Listado de productos:</h1>
-    <section class="productos">
+    
+    
+      
     
       <% Products.forEach(function(producto){ %>
         <a href="/products/detail/<%= producto.id %>">
           <article>
-              <p>Este producto tiene lo siguiente:</p>
-            <ul>
+              
+            <ul class = "productos">
+              <div class= "productos1">
               <li>Nombre: <%= producto.name %> </li>
-              <li>Precio: <%= producto.price %> </li>
+              <li>Precio: $ <%= producto.price %> </li>
               <li>Categoria: <%= producto.category %> </li>
               <li>Descripcion: <%= producto.description %> </li>
               <li>Color: <%= producto.color %> </li>
-              <li>Imagen: <%= producto.image %> </li>
               <li>Medidas: <%= producto.measure %> </li>
-
+            </div>
+            <div class= "productos2">
+              <li><img src= "<%= producto.image %>" width="130%"></li>
+              
+            </div>
               
             </ul>
           </article>
@@ -31,7 +36,7 @@
       
         <% }) %> 
       
-      </section>
+     
 
    
     <%- include('./partials/footer.ejs')%>

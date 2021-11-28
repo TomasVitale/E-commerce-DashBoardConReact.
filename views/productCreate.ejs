@@ -6,19 +6,20 @@
   <body>
     <%- include("partials/header.ejs") %> 
 
-    <h1>Crear producto:</h1>
+    
 
     <main >
-      <div class="">
+      <div class="product">
+        <h1>Crear producto:</h1>
 
         <form action="/products/create" method="POST">
   
-          <div class="">
+          <div class="product-form">
             <label for="nombre">Nombre:</label>
             <input type="text" name="name" id="name">
           </div>
           
-          <div class="" >
+          <div class="product-form" >
             <label for="category">Categoria:</label>
             <select name ='category'>
               <% categories.forEach(function(category){ %>
@@ -32,42 +33,44 @@
             <!-- <input type="text" name="category_id"  id="category"> -->
           </div>
   
-          <div class="">
+          <div class="product-form">
             <label for="precio">Precio:</label>
             <input type="number" name="price" id="precio">
           </div>
-          <div class="">
+          <div class="product-form">
             <label for="measure">Medidas:</label>
             <input type="text"  name="measure" id="measure">
           </div>
-          <div class="">
+          <div class="product-form">
             <label for="color">Color:</label>
             <input type="text" name="color" id="color">
           </div>
-          <div class="">
+          <div class="product-form">
             <label for="descripcion">Descripcion:</label>
             <input type="text" name="description" id="description">
           </div>
-          <div class="">
+          <div class="product-form">
             <label for="imagen">Imagen:</label>
             <input type="" name="image" id="image">
           </div>
   
           
 
-          <div class="">
+          
     
             <button type="submit">
               Crear Producto
             </button>
 
-          </div>
+          
         </form>
         
        
       
       </div>
+    
     </main>
+  
     <%- include("partials/footer.ejs") %> 
 
   </body>
