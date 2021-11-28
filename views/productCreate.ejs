@@ -12,15 +12,15 @@
       <div class="product">
         <h1>Crear producto:</h1>
 
-        <form action="/products/create" method="POST">
+        <form action="/products/create" method="POST" enctype="multipart/formdata">
   
           <div class="product-form">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre:</label><br>
             <input type="text" name="name" id="name">
           </div>
           
           <div class="product-form" >
-            <label for="category">Categoria:</label>
+            <label for="category">Categoria:</label><br>
             <select name ='category'>
               <% categories.forEach(function(category){ %>
                 
@@ -34,24 +34,26 @@
           </div>
   
           <div class="product-form">
-            <label for="precio">Precio:</label>
+            <label for="precio">Precio:</label><br>
             <input type="number" name="price" id="precio">
           </div>
           <div class="product-form">
-            <label for="measure">Medidas:</label>
+            <label for="measure">Medidas:</label><br>
             <input type="text"  name="measure" id="measure">
           </div>
           <div class="product-form">
-            <label for="color">Color:</label>
+            <label for="color">Color:</label><br>
             <input type="text" name="color" id="color">
           </div>
           <div class="product-form">
-            <label for="descripcion">Descripcion:</label>
+            <label for="descripcion">Descripcion:</label><br>
             <input type="text" name="description" id="description">
           </div>
           <div class="product-form">
-            <label for="imagen">Imagen:</label>
-            <input type="" name="image" id="image">
+            <label for="imagen">Imagen:</label><br>
+            <input accept="image/png,image/jpeg,image/jpg" type="file" >
+
+
           </div>
   
           

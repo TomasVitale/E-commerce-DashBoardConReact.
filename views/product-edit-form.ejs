@@ -6,20 +6,21 @@
   <body>
     <%- include("partials/header.ejs") %> 
 
-    <h1>Editar el producto:</h1>
+   
 
     <main >
       <div class="">
+        <h1>Editar el producto</h1>
 
         <form action="/products/edit/<%= producto.id %>?_method=PUT" method="POST">
   
           <div class="">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre:</label><br>
             <input type="text" value="<%= producto.name %>" name="name" id="name">
           </div>
           
           <div class="" >
-            <label for="category">Categoria:</label>
+            <label for="category">Categoria:</label><br>
             <select name ='category'>
               <% categories.forEach(function(category){ %>
                 
@@ -31,22 +32,22 @@
             </select>
           </div>
   
-          <div class="">
-            <label for="precio">Precio:</label>
+          <div class="form-edit">
+            <label for="precio">Precio:</label><br>
             <input type="number" value="<%= producto.price %>" name="price" id="precio">
           </div>
-          <div class="">
-            <label for="measure">Medidas:</label>
+          <div class="form-edit">
+            <label for="measure">Medidas:</label><br>
             <input type="text" value="<%= producto.measure %>" name="measure" id="measure">
           </div>
-          <div class="">
-            <label for="color">Color:</label>
+          <div class="form-edit">
+            <label for="color">Color:</label><br>
             <input type="text" value="<%= producto.color %>" name="color" id="color">
-          </div>
+          </div><br>
   
           
 
-          <div class="">
+          <div class="form-edit">
     
             <button type="submit">
               Editar
@@ -55,7 +56,7 @@
           </div>
         </form>
         
-        <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST">
+        <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST"><br>
           <button type="submit">
             Borrar
           </button>
