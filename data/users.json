@@ -6,5 +6,13 @@
   "telefono": "3364669120",
   "password": "$2a$10$uzNFSiSZC7x/hcaFNFo9ve/ZiKVniZj5Zy5xWNrSA0dsYSpK9HPAy",
   "avatar": "1635462700828_img.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Pablo",
+  "email": "pablo@giga.com",
+  "telefono": "63222332232",
+  "password": "$2a$10$v9x3sfgECvn.rva0RQqGeuG/Z.QW.QBVr4TyvWE.qwT2mhj7KgRW6",
+  "avatar": "1638218409662_img.jpg"
  }
 ]

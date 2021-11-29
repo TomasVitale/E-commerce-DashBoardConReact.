@@ -8,9 +8,6 @@ section {
   padding-bottom: 50px;
 }
 
-
-
-
                                             /*Header Deco muebles */
 
 header {
@@ -49,7 +46,6 @@ ul {
   }
 
   
-
   div.gallery {
     border: 1px solid #ccc;
     width: 400px;
@@ -63,8 +59,7 @@ ul {
     border: 1px solid #777;
   }
 
-
-                                                    /*Slideshow */
+                                                  /*Slideshow */
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -108,8 +103,7 @@ img {vertical-align: middle;}
 
 
 
-
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicadores */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -156,6 +150,8 @@ img {vertical-align: middle;}
   float: left;
   width: 33.33%;
   padding: 50px;
+  text-align: center;
+  font-size: 180%;
 }
 
 .clearfix::after {
@@ -179,7 +175,6 @@ img {vertical-align: middle;}
   font-family: Arial, Helvetica, sans-serif
 }  
 
-  
                                               /*Las 6  imagenes */
 
   div.gallery img {
@@ -221,8 +216,6 @@ img {vertical-align: middle;}
     clear: both;
   }
 
-
-
   .banner {
     display: flex;
     flex-wrap: nowrap;
@@ -237,7 +230,6 @@ img {vertical-align: middle;}
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif
   }  
-
 
                                                 /*Las ultimas 4  imagenes */
 
