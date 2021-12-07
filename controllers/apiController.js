@@ -1,5 +1,4 @@
-const db = require('../database/models');
-const DB = require ('../database/models');
+const db = require ('../database/models');
 const Op = DB.sequelize.Op;
 
 
@@ -7,7 +6,7 @@ module.exports = {
 
 // Lista de productos totales en la base + detalle de producto.
 list: (req,res) => {
-    DB.Product.findALL()
+    db.Product.findALL()
         .then(productos => {
             return res.json({
                 total: productos.length,
@@ -19,7 +18,7 @@ list: (req,res) => {
 },
 // Detalle de producto unico por ID en formato JSON ( objeto literal)
 detail: (req,res)=> {
-    DB.Product.FindByPk(req.params.id)
+    db.Product.FindByPk(req.params.id)
         .then(producto => {
             return res.json({
                 data: producto,
@@ -31,7 +30,7 @@ detail: (req,res)=> {
 
 // Creacion de nuevo Producto 
 store: (req,res) => {
-    DB.Product.create(req.body)
+    db.Product.create(req.body)
         .then(producto => {
             return res.json({
                 data: producto,
@@ -41,7 +40,7 @@ store: (req,res) => {
 },
 // Elimina Producto de la base por ID
 delete: (req,res) => {
-    DB.Product.destroy({
+    db.Product.destroy({
         where: {
                 id: req.params.id
         }
@@ -52,7 +51,7 @@ delete: (req,res) => {
 },
 // Encuentra elementos relacionados con la query realizada por el usuario y los presenta en formato de Array de Objetos Literales con su detalle
 search:  (req,res) => {
-    DB.Product.findAll({
+    db.Product.findAll({
         where: {
                 title: { [Op.like]: '%' + req.query.keyword + '%'}
         }
