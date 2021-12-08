@@ -17,7 +17,7 @@ module.exports = {
         },
         // Detalle de Usuario unico por ID en formato JSON ( objeto literal)
         detail: (req,res)=> {
-            db.Usuario.FindByPk(req.params.id)
+            db.Usuario.findByPk(req.params.id)
                 .then(usuario => {
                     return res.json({
                         data: usuario,
