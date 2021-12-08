@@ -1,15 +1,15 @@
 const db = require ('../database/models');
-const Op = DB.sequelize.Op;
+const Op = db.sequelize.Op;
 
 module.exports = {
 
         // Lista de Usuarios totales en la base + la informacion de cada uno.
         list: (req,res) => {
-            db.Usuario.findALL()
-                .then(productos => {
+            db.Usuario.findAll()
+                .then(usuarios => {
                     return res.json({
-                        total: productos.length,
-                        data: productos,
+                        total: usuarios.length,
+                        data: usuarios,
                         status: 200
         
                 })

@@ -27,13 +27,15 @@ app.listen(3000,() => {
 
 const mainRoutes = require ('./routers/main');
 const productsRouter = require('./routers/products');
-
+const apiRoutes = require ('./routers/apiRoutes')
+const apiUsers = require ('./routers/apiUsers')
 
 
 app.use('/', mainRoutes);
-app.use('/products', productsRouter);
+app.use('/products', apiRoutes);
 app.use('/list', productsRouter);
 app.use('/shopCart', productsRouter )
+app.use('/users', apiUsers)
 
 
 

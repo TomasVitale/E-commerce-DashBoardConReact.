@@ -1,12 +1,12 @@
 const db = require ('../database/models');
-const Op = DB.sequelize.Op;
+const Op = db.sequelize.Op;
 
 
 module.exports = {
 
 // Lista de productos totales en la base + detalle de producto.
 list: (req,res) => {
-    db.Product.findALL()
+    db.Product.findAll()
         .then(productos => {
             return res.json({
                 total: productos.length,
@@ -18,7 +18,7 @@ list: (req,res) => {
 },
 // Detalle de producto unico por ID en formato JSON ( objeto literal)
 detail: (req,res)=> {
-    db.Product.FindByPk(req.params.id)
+    db.Product.findByPk(req.params.id)
         .then(producto => {
             return res.json({
                 data: producto,
