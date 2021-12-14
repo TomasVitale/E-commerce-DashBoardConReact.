@@ -5,14 +5,16 @@ const Op = db.sequelize.Op;
 module.exports = {
 
 // Lista de productos totales en la base + detalle de producto.
+
+
 list: (req,res) => {
     db.Product.findAll()
         .then(productos => {
             return res.json({
-                total: productos.length,
-                data: productos,
-                status: 200
-
+            total: productos.length,
+            data: productos,
+            status: 200,
+            
         })
     })
 },

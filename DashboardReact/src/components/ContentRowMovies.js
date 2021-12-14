@@ -7,7 +7,7 @@ let productInDataBase = {
     color:   "primary",
     titulo: "Products in Data Base",
     valor: 0,
-    icono: "fas fa-film",
+    icono: "fas fa-couch",
 }
 
 let category ={
@@ -51,7 +51,7 @@ function ContentRowTop(){
                     color:   "primary",
                     titulo: "Products in Data Base",
                     valor: productos.total,
-                    icono: "fas fa-film",
+                    icono: "fas fa-couch",
                 })   
             })
 
@@ -68,7 +68,7 @@ function ContentRowTop(){
                     color:   "primary",
                     titulo: "Categories in Data Base",
                     valor: categoria.total,
-                    icono: "fas fa-film",
+                    icono: "fas fa-chair",
                 })   
             })
 
@@ -85,7 +85,7 @@ function ContentRowTop(){
                         color:   "primary",
                         titulo: "Users in Data Base",
                         valor: usuarios.total,
-                        icono: "fas fa-film",
+                        icono: "fa-solid fa-user"
                     })   
                 })
     
