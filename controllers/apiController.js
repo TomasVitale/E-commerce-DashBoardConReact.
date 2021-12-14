@@ -63,5 +63,16 @@ search:  (req,res) => {
                 status: 200})
         })
 },
+categories: (req,res) => {
+    db.Category.findAll()
+    .then(categories => {
+        return res.json({
+            total: categories.length,
+            data: categories,
+            status: 200
+
+    })
+})
+},
 
 };

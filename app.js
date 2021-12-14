@@ -7,6 +7,7 @@ const cookies = require('cookie-parser');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 
+
 app.use(express.urlencoded({ extended: false}));
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -16,7 +17,7 @@ app.use(session({
         resave: false,
         saveUninitialized: false,
 }));
-
+app.use(express.json());
 app.use(cookies())
 
 app.use (userLoggedMiddleware);
@@ -32,10 +33,11 @@ const apiUsers = require ('./routers/apiUsers')
 
 
 app.use('/', mainRoutes);
-app.use('/products', apiRoutes);
+app.use('/api', apiRoutes);
 app.use('/list', productsRouter);
-app.use('/shopCart', productsRouter )
-app.use('/users', apiUsers)
+app.use('/shopCart', productsRouter );
+app.use('/users', apiUsers);
+app.use('/products', productsRouter)
 
 
 

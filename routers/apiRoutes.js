@@ -3,11 +3,12 @@ const router = express.Router();
 
 const controller = require('../controllers/apiController');
 
-router.get('/', controller.list);
-router.get('/:id', controller.detail);
+router.get('/products', controller.list);
+router.get('/products/:id', controller.detail);
 router.post('/', controller.store);
-router.delete('/:id', controller.delete);
-router.get('/search', controller.search);
+router.delete('/products/:id', controller.delete);
+router.get('/products/search', controller.search);
+router.get('/categories', controller.categories)
 
 
 
