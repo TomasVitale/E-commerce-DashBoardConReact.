@@ -36,7 +36,7 @@ app.use('/', mainRoutes);
 app.use('/api', apiRoutes);
 app.use('/list', productsRouter);
 app.use('/shopCart', productsRouter );
-app.use('/users', apiUsers);
+app.use('/apis', apiUsers);
 app.use('/products', productsRouter)
 
 

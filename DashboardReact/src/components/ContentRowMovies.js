@@ -77,7 +77,7 @@ function ContentRowTop(){
         useEffect(() => {
 
 
-            fetch("/api/users")
+            fetch("/apis/users")
                 .then(res => res.json())
                 .then(usuarios =>{
                 

@@ -4,7 +4,7 @@ const router = express.Router();
 const controller = require('../controllers/usersApiController');
 
 
-router.get('/', controller.list);
+router.get('/users', controller.list);
 router.get('/:id', controller.detail);
 router.post('/', controller.store);
 router.delete('/:id', controller.delete);
