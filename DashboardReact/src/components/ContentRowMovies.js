@@ -18,8 +18,8 @@ let category ={
 }
 
 let user = {
-    color:   "success",
-    titulo: "Actors quantity",
+    color:   "primary",
+    titulo: "Users in Data Base",
     valor: 0,
     icono: "fas fa-user",
 }
@@ -55,21 +55,41 @@ function ContentRowTop(){
                 })   
             })
 
-        },[]),
-        
-        fetch("/api/categories")
-        .then(res => res.json())
-        .then(categoria =>{
-        
-            setCategory({
-                color:   "primary",
-                titulo: "Categories in Data Base",
-                valor: categoria.total,
-                icono: "fas fa-film",
-            })   
-        })
+        },[])
 
-    ,[])
+        useEffect(() => {
+
+
+        fetch("/api/categories")
+            .then(res => res.json())
+            .then(categoria =>{
+            
+                setCategory({
+                    color:   "primary",
+                    titulo: "Categories in Data Base",
+                    valor: categoria.total,
+                    icono: "fas fa-film",
+                })   
+            })
+
+        },[])
+
+        useEffect(() => {
+
+
+            fetch("/api/users")
+                .then(res => res.json())
+                .then(usuarios =>{
+                
+                    setUser({
+                        color:   "primary",
+                        titulo: "Users in Data Base",
+                        valor: usuarios.total,
+                        icono: "fas fa-film",
+                    })   
+                })
+    
+            },[]);
 
     
 
