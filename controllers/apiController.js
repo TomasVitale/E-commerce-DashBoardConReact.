@@ -18,7 +18,7 @@ list: (req,res) => {
         })
     })
 },
-// Detalle de producto unico por ID en formato JSON ( objeto literal)
+// Detalle de producto unico por ID en formato JSON.
 detail: (req,res)=> {
     db.Product.findByPk(req.params.id)
         .then(producto => {
@@ -30,7 +30,7 @@ detail: (req,res)=> {
     })
 },
 
-// Creacion de nuevo Producto 
+// Creacion de nuevo Producto.
 store: (req,res) => {
     db.Product.create(req.body)
         .then(producto => {
@@ -40,7 +40,7 @@ store: (req,res) => {
         })
     })
 },
-// Elimina Producto de la base por ID
+// Elimina Producto de la base por ID.
 delete: (req,res) => {
     db.Product.destroy({
         where: {
@@ -51,7 +51,7 @@ delete: (req,res) => {
             return res.json(response)
         })
 },
-// Encuentra elementos relacionados con la query realizada por el usuario y los presenta en formato de Array de Objetos Literales con su detalle
+// Encuentra elementos relacionados con la query realizada  y muestra en formato de Array de Objetos Literales con su detalle + cant. de productos encontrados.
 search:  (req,res) => {
     db.Product.findAll({
         where: {

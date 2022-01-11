@@ -5,9 +5,9 @@ const controller = require('../controllers/usersApiController');
 
 
 router.get('/users', controller.list);
-router.get('/:id', controller.detail);
-router.post('/', controller.store);
-router.delete('/:id', controller.delete);
+router.get('/users/:id', controller.detail);
+router.post('/users', controller.store);
+router.delete('/users/:id', controller.delete);
 router.get('/search', controller.search);
 
 
